@@ -1,0 +1,79 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    display:grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 1fr 1fr;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+#logo {
+    width: 100%;
+}
+
+#dropdownImg {
+    grid-column: 3;
+}
+
+header span {
+    width: 100%;
+}
+
+header nav {
+    grid-column: span 3;
+    grid-row: 2;
+    background-color: aquamarine;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+}
+
+header nav ul li {
+    padding: 20px 0px;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+h2 {
+    font-size: larger;
+}
+
+main {
+    margin: 10px;
+}
+
+section {
+    margin: 10px;
+}
+
+section h2 {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 0px;
+}
+
+section p {
+    background-color: rgb(255, 222, 182);
+    padding: 10px;
+    margin: 0px;
+}
