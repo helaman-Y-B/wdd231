@@ -1,13 +1,29 @@
+:root {
+    --main-color: #EFF8E2;
+    --second-color: #dec6fd;
+    --third-color: #c7b4fd;
+    --fourth-color: #592E83;
+    --header-text: "Archivo Black", Arial, Helvetica, sans-serif;
+    --normal-text: "Barlow Semi Condensed", Georgia, Times, serif;
+}
+
 body {
-    background-color: bisque;
+    background-color: var(--main-color);
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
     display:grid;
     grid-template-columns: 30% 1fr 30%;
     grid-template-rows: 1fr 1fr;
-    background-color: antiquewhite;
-    margin-bottom: 30px;
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+    font-family: var(--header-text);
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #logo {
@@ -25,7 +41,8 @@ header span {
 header nav {
     grid-column: span 3;
     grid-row: 2;
-    background-color: aquamarine;
+    background-color: var(--third-color);
+    font-style: normal;
 }
 
 header nav ul {
@@ -35,6 +52,7 @@ header nav ul {
     text-align: center;
     align-items: center;
     padding: 0px;
+    color: black;
 }
 
 header nav ul li {
@@ -45,7 +63,9 @@ header nav ul li {
 h1,
 h2,
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--header-text);
+    font-weight: 800;
+    font-style: normal;
 }
 
 h1 {
@@ -58,22 +78,55 @@ h2 {
 }
 
 main {
-    margin: 10px;
+    margin: 5px;
 }
 
 section {
     margin: 10px;
+    background-color: var(--third-color);
+    border-style: inset;
+    border-color: var(--fourth-color);
+    border-width: 5px;
+    border-radius: 10px;
 }
 
 section h2 {
     text-align: center;
-    background-color: aliceblue;
+    background-color: var(--second-color);
     padding: 5px;
     margin: 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 section p {
-    background-color: rgb(255, 222, 182);
     padding: 10px;
     margin: 0px;
+    font-weight: 400;
+}
+
+#courses {
+    display: flex;
+    flex-direction: column;
+}
+
+#courses h2 {
+    margin-bottom: 5px;
+}
+
+#courses span {
+    text-align: center;
+    padding: 5px;
+}
+
+#courses ul {
+    margin: 5px;
+}
+
+footer {
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+    font-family: var(--normal-text);
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 20px;
 }
