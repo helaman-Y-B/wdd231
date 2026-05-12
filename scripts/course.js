@@ -80,6 +80,10 @@ const courses = [
 
 const coursesUl = document.querySelector("#courses ul");
 
+/**
+ * A function that creates li elements and insert it into
+ * the ul from the courses section.
+ */
 function displayCourses() {
     courses.forEach(course => {
         const li = document.createElement("li");
@@ -102,6 +106,10 @@ function displayCourses() {
     });
 }
 
+/**
+ * Function responsible to calculate the 
+ * amount of credits a student already received.
+ */
 function calculateCredits() {
     let credits = 0
     courses.forEach(course => {
