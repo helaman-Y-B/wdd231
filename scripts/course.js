@@ -91,9 +91,30 @@ function displayCourses() {
 
         li.setAttributeNode(id);
         li.setAttributeNode(className);
-        li.textContent = `${course.subject} ${course.number}`;
+
+        if(course.completed == true) {
+            li.textContent = `${course.subject} ${course.number} - Completed`;
+        } else {
+            li.textContent = `${course.subject} ${course.number} - Not Completed`;
+        };
+
         coursesUl.appendChild(li);
     });
 }
 
+function calculateCredits() {
+    let credits = 0
+    courses.forEach(course => {
+        if(course.completed == true) {
+            credits += course.credits; 
+        } else {
+            credits += 0;
+        }
+    });
+
+    const creditSpan = document.getElementById("totalCredits");
+    creditSpan.textContent = `The total credits owned is ${credits}`;
+}
+
 displayCourses();
+calculateCredits();
