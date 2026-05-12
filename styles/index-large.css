@@ -1,0 +1,66 @@
+@media screen and (min-width: 720px){
+    p {
+        font-size: larger;
+    }
+    
+    #dropdownImg {
+        display: none;
+    }
+
+    #logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        margin: 0px;
+    }
+
+    header nav ul li {
+        padding: 20px 0px;
+        width: 100%;
+    }
+
+    header nav ul li:hover {
+        background-color: var(--fourth-color);
+        color: var(--main-color);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    main h1 {
+        grid-column: span 3;
+        grid-row: 1;
+    }
+
+    #abour-me {
+        grid-column: span 2;
+        grid-row: 2;
+        height: 100%;
+    }
+
+    #student {
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    #courses {
+        grid-column: span 3;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+
+    #courses span{
+        font-size: larger;
+    }
+}
