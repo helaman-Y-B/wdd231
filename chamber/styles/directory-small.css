@@ -26,6 +26,8 @@ header {
   font-family: var(--header-font);
   display: grid;
   grid-template-columns: 20% 1fr 20%;
+  align-items: center;
+  text-align: center;
 }
 
 header img {
@@ -34,7 +36,7 @@ header img {
 
 nav {
   display: none;
-  background-color: rgba(132, 189, 190, 0.8);
+  background-color: rgba(147, 192, 177, 0.8);
   grid-column: span 2 / -1;
   position: fixed;
   top: 19.2vw;
@@ -47,6 +49,7 @@ nav {
 }
 
 nav ul {
+  background-color: rgba(147, 192, 177, 1);
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -62,6 +65,10 @@ nav ul li a {
 
 ul li a:link {
   text-decoration: none;
+}
+
+h1 {
+  margin-left: 10px;
 }
 
 section {
