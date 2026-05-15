@@ -1,9 +1,20 @@
 :root {
   --background-color: #f3f3f3;
-  --primary-color: #b6f8cc;
-  --secondary-color: #84bdbe;
+  --primary-color: #acdbbd;
+  --secondary-color: #93c0b1;
   --header-font: "Archivo Black", Arial, Helvetica, sans-serif;
   --text-font: "Barlow Semi Condensed", Georgia, Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header-font);
+}
+
+p {
+  font-family: var(--text-font);
 }
 
 body {
@@ -51,4 +62,79 @@ nav ul li a {
 
 ul li a:link {
   text-decoration: none;
+}
+
+section {
+  background-color: var(--primary-color);
+  padding: 0px 10px;
+  margin: 10px;
+  border: var(--secondary-color);
+  border-radius: 10px;
+  border-style: outset;
+}
+
+#purpouse p {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  border: var(--secondary-color);
+  border-style: inset;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px;
+  margin: auto;
+  margin-bottom: 10px;
+  align-items: center;
+  list-style: none;
+}
+
+#filters li {
+  background-color: var(--background-color);
+  font-family: var(--text-font);
+  border-radius: 10px;
+  border: var(--secondary-color);
+  border-style: inset;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+#products-list {
+  background-color: var(--secondary-color);
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: var(--primary-color);
+  border-style: outset;
+  margin-bottom: 10px;
+}
+
+#products-list h3 {
+  display: inline-block;
+}
+
+.products {
+  background-color: var(--primary-color);
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: var(--secondary-color);
+  border-style: inset;
+  margin: 10px 0px;
+}
+
+.products ul {
+  font-family: var(--text-font);
+  list-style: none;
+  padding: 1.33em 0px;
+  border-top: 3px solid black;
+}
+
+.products ul li {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 10px;
 }
