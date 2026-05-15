@@ -39,13 +39,18 @@ nav {
   background-color: rgba(147, 192, 177, 0.8);
   grid-column: span 2 / -1;
   position: fixed;
-  top: 19.2vw;
-  left: 19.2vw;
+  top: 0;
+  right: 0;
   width: 80%;
   height: 100%;
   z-index: 1000;
   text-align: center;
   justify-content: flex-end;
+}
+
+.close-btn {
+  width: 100%;
+  padding: 10px;
 }
 
 nav ul {
