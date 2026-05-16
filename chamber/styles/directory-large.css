@@ -1,0 +1,42 @@
+@media screen and (min-width: 526px) {
+  header span {
+    grid-column: 2 / span 2;
+  }
+
+  #menu-toggle img {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    grid-column: 1 / span 3;
+    position: initial;
+    width: 100%;
+    max-height: 80px;
+    justify-content: center;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: auto;
+    padding: 25px;
+  }
+}
