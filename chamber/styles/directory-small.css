@@ -101,12 +101,40 @@ section {
   border-style: outset;
 }
 
-#purpouse p {
+#image {
+  padding: 0px;
+  align-items: center;
+  text-align: center;
+}
+
+#image img {
+  max-width: 90%;
+  margin: 10px 0px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border-style: inset;
+  border-color: var(--secondary-color);
+}
+
+#purpose {
+  text-align: center;
+  align-items: center;
+}
+
+#purpose p {
   background-color: var(--background-color);
   padding: 10px;
   border-radius: 10px;
   border: var(--secondary-color);
   border-style: inset;
+  text-align: left;
+}
+
+#purpose img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 #filters {

@@ -39,4 +39,42 @@
     width: auto;
     padding: 25px;
   }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 1fr;
+    gap: 5px;
+    margin: 10px 10px;
+  }
+
+  section {
+    margin: 0px;
+  }
+
+  main h1 {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+  #image {
+    grid-column: 3 / span 2;
+  }
+
+  #image img {
+    max-width: 100%;
+    height: 100%;
+    margin: auto auto;
+    border: none;
+  }
+
+  #purpose {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  #catalog {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+  }
 }
