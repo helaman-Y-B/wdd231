@@ -11,7 +11,7 @@ document.getElementById("lastModified").textContent = `Last modification: ${docu
  * This script is responsable to show or hide the navigation menu.
  */
 
-const dropdownBtn = document.getElementById("dropdownImg");
+const dropdownBtn = document.querySelector(".close-btn");
 const nav = document.querySelector("header nav ul");
 
 dropdownBtn.addEventListener("click", () => {
