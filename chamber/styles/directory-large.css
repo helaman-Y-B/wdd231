@@ -77,4 +77,8 @@
     grid-column: 1 / span 4;
     grid-row: 3;
   }
+
+  #filters li {
+    width: 10%;
+  }
 }
