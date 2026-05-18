@@ -11,14 +11,21 @@ document.getElementById("lastModified").textContent = `Last modification: ${docu
  * This script is responsable to show or hide the navigation menu.
  */
 
-const dropdownBtn = document.querySelector(".close-btn");
-const nav = document.querySelector("header nav ul");
+const sideBar = document.querySelector("#menu-toggle");
+const nav = document.querySelector("nav");
 
-dropdownBtn.addEventListener("click", () => {
-    if(nav.style.display == "") {
-        nav.style.display = "flex";
-    }
-    else if(nav.style.display == "flex") {
-        nav.style.display = "";
-    }
+const closeBtn = document.querySelector(".close-btn")
+
+// Opens the navigation bar
+sideBar.addEventListener("click", () => {
+    
+    nav.style.display = "block";
+    
+})
+
+//Closes the navigation bar
+closeBtn.addEventListener("click", () => {
+    
+    nav.style.display = "none";
+    
 })
