@@ -1,0 +1,23 @@
+{
+    "familyName": "Barbour",
+    "movedIn": 2002,
+    "familySize": 5,
+    "visited": false,
+    "familyMembers": [
+        {
+            "name": "Helamã",
+            "gender": "male",
+            "birthdate": "07/04/2002"
+        },
+        {
+            "name": "Shayla",
+            "gender": "female",
+            "birthdate": "07/04/2002"
+        },
+        {
+            "name": "Dallin",
+            "gender": "male",
+            "birthdate": "07/04/2002"
+        }
+    ]
+}
