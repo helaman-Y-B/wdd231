@@ -1,5 +1,6 @@
 @media screen and (min-width: 526px) {
   header span {
+    text-align: left;
     grid-column: 2 / span 2;
   }
 
@@ -73,6 +74,24 @@
     grid-row: 2;
   }
 
+  #members-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .members {
+    flex: 1;
+    min-width: 40%;
+  }
+
+  .member-image {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+  }
+
   #members {
     grid-column: 1 / span 4;
     grid-row: 3;
@@ -80,5 +99,12 @@
 
   #filters li {
     width: 10%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 1000px;
+    margin: 20px auto;
   }
 }

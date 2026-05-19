@@ -148,7 +148,7 @@ section {
   list-style: none;
 }
 
-#filters li {
+#filters button {
   background-color: var(--background-color);
   font-family: var(--text-font);
   border-radius: 10px;
@@ -157,6 +157,7 @@ section {
   text-align: center;
   padding: 10px;
   margin: auto;
+  min-width: 30%;
 }
 
 #members-list {
