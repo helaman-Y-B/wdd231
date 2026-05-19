@@ -7,7 +7,7 @@
             }],
             "contact": "+55 (43) 99123-4567",
             "website": "cafedolagolondrina.com.br",
-            "image": "images/cafe-do-lago.jpg",
+            "image": "images/members/cafe-large.webp",
             "membership": "gold",
             "colaborators": 14
         },
@@ -18,7 +18,7 @@
             }],
             "contact": "+55 (43) 3321-9876",
             "website": "pevermelhotech.com.br",
-            "image": "images/pe-vermelho-tech.jpg",
+            "image": "images/members/pe-large.webp",
             "membership": "platinum",
             "colaborators": 85
         },
@@ -29,7 +29,7 @@
             }],
             "contact": "+55 (43) 99876-5432",
             "website": "modahigienopolis.com",
-            "image": "images/moda-higienopolis.jpg",
+            "image": "images/members/moda-large.webp",
             "membership": "silver",
             "colaborators": 6
         },
@@ -40,7 +40,7 @@
             }],
             "contact": "+55 (43) 3344-5566",
             "website": "londriverdeorganicos.com.br",
-            "image": "images/londriverde.jpg",
+            "image": "images/members/verde-large.webp",
             "membership": "bronze",
             "colaborators": 12
         },
@@ -51,7 +51,7 @@
             }],
             "contact": "+55 (43) 3322-1100",
             "website": "livrariacalcadao.com.br",
-            "image": "images/livraria-calcadao.jpg",
+            "image": "images/members/livro-large.webp",
             "membership": "silver",
             "colaborators": 9
         },
@@ -62,7 +62,7 @@
             }],
             "contact": "+55 (43) 99555-8822",
             "website": "glebafitness.com.br",
-            "image": "images/gleba-fitness.jpg",
+            "image": "images/members/fit-large.webp",
             "membership": "gold",
             "colaborators": 22
         },
@@ -73,7 +73,7 @@
             }],
             "contact": "+55 (43) 98888-7777",
             "website": "cervejariazerao.com",
-            "image": "images/cervejaria-zerao.jpg",
+            "image": "images/members/cerveja-large.webp",
             "membership": "platinum",
             "colaborators": 31
         }

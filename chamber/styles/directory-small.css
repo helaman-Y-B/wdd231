@@ -168,6 +168,10 @@ section {
   margin-bottom: 10px;
 }
 
+.member-image {
+  width: 100%;
+}
+
 #members-list h3 {
   display: inline-block;
 }
