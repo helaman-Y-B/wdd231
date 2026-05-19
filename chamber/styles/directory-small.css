@@ -159,7 +159,7 @@ section {
   margin: auto;
 }
 
-#products-list {
+#members-list {
   background-color: var(--secondary-color);
   padding: 0px 10px;
   border-radius: 10px;
@@ -168,11 +168,11 @@ section {
   margin-bottom: 10px;
 }
 
-#products-list h3 {
+#members-list h3 {
   display: inline-block;
 }
 
-.products {
+.members {
   background-color: var(--primary-color);
   padding: 0px 10px;
   border-radius: 10px;
@@ -181,14 +181,14 @@ section {
   margin: 10px 0px;
 }
 
-.products ul {
+.members ul {
   font-family: var(--text-font);
   list-style: none;
   padding: 1.33em 0px;
   border-top: 3px solid black;
 }
 
-.products ul li {
+.members ul li {
   background-color: var(--background-color);
   border-radius: 10px;
   margin: 10px 0px;

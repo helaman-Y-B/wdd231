@@ -73,7 +73,7 @@
     grid-row: 2;
   }
 
-  #catalog {
+  #members {
     grid-column: 1 / span 4;
     grid-row: 3;
   }

@@ -5,77 +5,77 @@
             "addresses": [{
             "address": "Av. Higienópolis, 1200 - Centro, Londrina - PR, 86020-911"
             }],
-            "phone-number": "+55 (43) 99123-4567",
+            "contact": "+55 (43) 99123-4567",
             "website": "cafedolagolondrina.com.br",
             "image": "images/cafe-do-lago.jpg",
             "membership": "gold",
-            "total-colaborators": 14
+            "colaborators": 14
         },
         {
             "name": "Pé Vermelho Tech Solutions",
             "addresses": [{
             "address": "R. Paranaguá, 450 - Vila Nova, Londrina - PR, 86020-030"
             }],
-            "phone-number": "+55 (43) 3321-9876",
+            "contact": "+55 (43) 3321-9876",
             "website": "pevermelhotech.com.br",
             "image": "images/pe-vermelho-tech.jpg",
             "membership": "platinum",
-            "total-colaborators": 85
+            "colaborators": 85
         },
         {
             "name": "Moda Higienópolis",
             "addresses": [{
             "address": "Av. Ayrton Senna da Silva, 500 - Gleba Palhano, Londrina - PR, 86050-460"
             }],
-            "phone-number": "+55 (43) 99876-5432",
+            "contact": "+55 (43) 99876-5432",
             "website": "modahigienopolis.com",
             "image": "images/moda-higienopolis.jpg",
             "membership": "silver",
-            "total-colaborators": 6
+            "colaborators": 6
         },
         {
             "name": "LondriVerde Produtos Orgânicos",
             "addresses": [{
             "address": "Av. Maringá, 1850 - Jardim Vitória, Londrina - PR, 86060-000"
             }],
-            "phone-number": "+55 (43) 3344-5566",
+            "contact": "+55 (43) 3344-5566",
             "website": "londriverdeorganicos.com.br",
             "image": "images/londriverde.jpg",
             "membership": "bronze",
-            "total-colaborators": 12
+            "colaborators": 12
         },
         {
             "name": "Livraria Calçadão",
             "addresses": [{
             "address": "Av. Paraná, 220 - Centro, Londrina - PR, 86010-390"
             }],
-            "phone-number": "+55 (43) 3322-1100",
+            "contact": "+55 (43) 3322-1100",
             "website": "livrariacalcadao.com.br",
             "image": "images/livraria-calcadao.jpg",
             "membership": "silver",
-            "total-colaborators": 9
+            "colaborators": 9
         },
         {
             "name": "Gleba Fitness Apparel",
             "addresses": [{
             "address": "R. Jamil Scaff, 105 - Park Jamaica, Londrina - PR, 86063-450"
             }],
-            "phone-number": "+55 (43) 99555-8822",
+            "contact": "+55 (43) 99555-8822",
             "website": "glebafitness.com.br",
             "image": "images/gleba-fitness.jpg",
             "membership": "gold",
-            "total-colaborators": 22
+            "colaborators": 22
         },
         {
             "name": "Cervejaria Zerão",
             "addresses": [{
             "address": "R. Júlio Estrela Moreira, 80 - Centro, Londrina - PR, 86015-160"
             }],
-            "phone-number": "+55 (43) 98888-7777",
+            "contact": "+55 (43) 98888-7777",
             "website": "cervejariazerao.com",
             "image": "images/cervejaria-zerao.jpg",
             "membership": "platinum",
-            "total-colaborators": 31
+            "colaborators": 31
         }
     ]
 }
