@@ -186,6 +186,23 @@ section {
   margin: 10px 0px;
 }
 
+.grid-display {
+  background-color: var(--primary-color);
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: var(--secondary-color);
+  border-style: inset;
+  margin: 10px 0px;
+}
+
+.grid-display img {
+  display: block;
+}
+
+.list-display .list-display img {
+  display: none;
+}
+
 .members ul {
   font-family: var(--text-font);
   list-style: none;

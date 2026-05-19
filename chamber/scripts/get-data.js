@@ -19,6 +19,11 @@ async function getMembersData() {
     }
 }
 
+/**
+ * Function to create the members list and display it into the 
+ * members-list class div in Directory.
+ */
+
 function displayData(data) {
     let membersList = document.querySelector("#members-container");
 
@@ -58,6 +63,7 @@ function displayData(data) {
 
         const addresses = locations.map(location => location.address).join(", ");
         
+        // Insert text into the created elements.
         memberLocation.textContent = `Addresses: ${addresses}`;
         memberContact.textContent = `Contact: ${member.contact}`;
         memberWebsite.textContent = "Site: ";
@@ -85,17 +91,3 @@ function displayData(data) {
 }
 
 getMembersData();
-
-/**
- * <div class="members">
-        <img src="" alt="" class="member-image">
-        <h4 class="member-name">Something</h4>
-        <ul>
-            <li><strong>Location:</strong> <span class="member-location"></span></li>
-            <li><strong>Contact:</strong> <span class="member-contact"></span></li>
-            <li><strong>Website:</strong> <a href="" target="_blank" class="member-link"></a></li>
-            <li><strong>Tier:</strong> <span class="member-tier"></span></li>
-            <li><strong>Size:</strong> <span class="member-size"></span> Collaborators</li>
-        </ul>
-    </div>
- */
