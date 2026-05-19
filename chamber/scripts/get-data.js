@@ -52,8 +52,13 @@ function displayData(data) {
 
         // Insert data into the elements.
         memberName.textContent = `${member.name}`;
-        // Fix this
-        memberLocation.textContent = `Locations: ${member.location}`;
+        
+        // Get all adresses.
+        const locations = member.addresses;
+
+        const addresses = locations.map(location => location.address).join(", ");
+        
+        memberLocation.textContent = `Addresses: ${addresses}`;
         memberContact.textContent = `Contact: ${member.contact}`;
         memberWebsite.textContent = "Site: ";
         webSiteLink.textContent = `${member.website}`;
