@@ -1,0 +1,121 @@
+@media screen and (min-width: 526px) {
+  header span {
+    text-align: left;
+    grid-column: 2 / span 2;
+  }
+
+  #menu-toggle img {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    grid-column: 1 / span 3;
+    position: initial;
+    width: 100%;
+    max-height: 80px;
+    justify-content: center;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: auto;
+    padding: 25px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr 1fr;
+    gap: 5px;
+    margin: 10px 10px;
+  }
+
+  main h1 {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+  #hero-img img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    margin: auto auto;
+    border-radius: 10px;
+  }
+
+  #hero-img {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
+
+  #events {
+    grid-column: 1 / span 2;
+  }
+
+  #weather {
+    grid-column: 3;
+  }
+
+  #forecast {
+    grid-column: 4;
+  }
+
+  section {
+    margin: 0px;
+    grid-row: 3;
+  }
+
+  #business {
+    grid-row: 4;
+    grid-column: 1 / span 4;
+  }
+
+  #members-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .members {
+    flex: 1;
+    min-width: 40%;
+  }
+
+  .member-image {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+  }
+
+  #members {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+}
