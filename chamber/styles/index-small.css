@@ -128,11 +128,20 @@ h1 {
 
 section {
   background-color: var(--primary-color);
-  padding: 0px 10px;
   margin: 10px;
   border: var(--secondary-color);
   border-radius: 10px;
   border-style: outset;
+}
+
+section h2 {
+  background-color: var(--secondary-color);
+  margin: 0px;
+  padding: 20px;
+}
+
+section div {
+  padding: 0px 10px;
 }
 
 .members {
