@@ -1,0 +1,147 @@
+:root {
+  --background-color: #f3f3f3;
+  --primary-color: #acdbbd;
+  --secondary-color: #93c0b1;
+  --header-font: "Archivo Black", Arial, Helvetica, sans-serif;
+  --text-font: "Barlow Semi Condensed", Georgia, Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header-font);
+}
+
+p {
+  font-family: var(--text-font);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  font-family: var(--header-font);
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  max-width: 80px;
+}
+
+#menu-toggle img {
+  width: 50%;
+  max-width: 30px;
+}
+
+#menu-toggle {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  border: 0px;
+  margin-left: auto;
+}
+
+nav {
+  display: none;
+  background-color: rgba(147, 192, 177, 0.8);
+  grid-column: span 2 / -1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  z-index: 1000;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  background-color: var(--background-color);
+  border: 0px;
+  width: 100%;
+  padding: 20px;
+}
+
+nav ul {
+  background-color: rgba(147, 192, 177, 1);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li a {
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+}
+
+ul li a:link {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#keynotes {
+  font-family: var(--text-font);
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+section {
+  background-color: var(--primary-color);
+  padding: 0px 10px;
+  margin: 10px;
+  border: var(--secondary-color);
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.members {
+  background-color: var(--primary-color);
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: var(--secondary-color);
+  border-style: inset;
+  margin: 10px 0px;
+}
+
+.member-image {
+  width: 100%;
+}
+
+.members h4 {
+  margin-top: 0px;
+}
+
+.members ul {
+  font-family: var(--text-font);
+  list-style: none;
+  padding: 1.33em 0px;
+  border-top: 3px solid black;
+}
+
+.members ul li {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 10px;
+}
