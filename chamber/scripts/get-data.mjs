@@ -90,6 +90,8 @@ export async function displayData() {
         memberDiv.appendChild(memberInfo);
 
         membersList.appendChild(memberDiv);
+
+        
     });
 }
 
@@ -98,6 +100,10 @@ export async function displayIndexData() {
     const data = await getMembersData();
 
     data.forEach(member => {
+
+        if (member.membership !== "gold" && member.membership !==  "platinum") {
+            return;
+        } 
         // Create and set attributes
         const memberDiv = document.createElement("div");
         memberDiv.setAttribute("class", "members")
