@@ -78,7 +78,12 @@ nav ul {
   padding: 0px;
 }
 
+#selected {
+  background-color: #70a794;
+}
+
 nav ul li a {
+  color: black;
   display: inline-block;
   width: 90%;
   padding: 10px;

@@ -35,6 +35,10 @@
     width: 100%;
   }
 
+  #selected {
+    border-bottom: 5px solid black;
+  }
+
   nav ul li a {
     display: block;
     width: auto;
