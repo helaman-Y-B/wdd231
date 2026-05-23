@@ -1,3 +1,5 @@
+import { getApiData, getForecast } from "./forecast.mjs"
+
 /**
  * Function responsible to get data from members.json file.
  */
@@ -132,4 +134,46 @@ export async function displayIndexData() {
 
         membersList.appendChild(memberDiv);
     })
+}
+
+/**
+ * Isert the data from the API into the index page.
+ */
+export async function displayForeCast() {
+
+    const weatherData = await getApiData();
+    const forecastData = await getForecast();
+
+    const weatherIcon = document.getElementById("weather-icon");
+
+    const iconSrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
+
+    const temp = document.getElementById("temp");
+    const weather = document.getElementById("weather-stat");
+    const highest = document.getElementById("highest");
+    const lowest = document.getElementById("lowest");
+    const humidity = document.getElementById("humidity");
+    const sunrise = document.getElementById("sunrise");
+    const sunset = document.getElementById("sunset");
+
+    weatherIcon.setAttribute("src", `${iconSrc}`);
+    weatherIcon.setAttribute("alt", `${weatherData.weather[0].description}`);
+
+    temp.innerHTML = `${weatherData.main.temp} C`;
+    weather.innerHTML = `${weatherData.weather[0].description}`;
+    highest.innerHTML = `High: ${weatherData.main.temp_max}`;
+    lowest.innerHTML = `Low: ${weatherData.main.temp_min}`;
+    humidity.innerHTML = `Humidity: ${weatherData.main.humidity}%`;
+    sunrise.innerHTML = `Sunrise: ${weatherData.sys.sunrise}`;
+    sunset.innerHTML = `Sunset: ${weatherData.sys.sunset}`;
+
+    //Forecast
+    const todayCast = document.getElementById("today-cast");
+    const toworrowCast = document.getElementById("toworrow-cast");
+    const twodayCast = document.getElementById("twoday-cast");
+
+    //Forecast
+    todayCast.innerHTML = `Today: ${weatherData.main.temp}C`;
+    toworrowCast.innerHTML = `Tomorrow: ${forecastData[0].main.temp}C`;
+    twodayCast.innerHTML = `After Tomorrow: ${forecastData[1].main.temp}C`;
 }
