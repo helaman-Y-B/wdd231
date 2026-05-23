@@ -19,6 +19,7 @@ p {
 
 body {
   background-color: var(--background-color);
+  size-adjust: 100%;
 }
 
 header {
@@ -95,6 +96,7 @@ ul li a:link {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 #hero-img {
@@ -156,6 +158,10 @@ section h2 {
 
 section div {
   padding: 0px 10px;
+}
+
+#events {
+  min-height: 300px;
 }
 
 #weather div {

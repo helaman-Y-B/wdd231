@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index-small.css">
-    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/index-large.css" media="(max-width: 526px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,10 +29,10 @@
 
 <body>
     <header>
-        <img src="images/londrin-way-logo.webp" alt="E-commerce logo">
+        <img src="images/londrin-way-logo.webp" width="75px" alt="E-commerce logo">
         <span>LondriWay E-commerce</span>
         <button id="menu-toggle" aria-label="Open Menu">
-            <img src="images/nav-icon-32x32.png" alt="open navigation symbol">
+            <img src="images/nav-icon-32x32.png" width="32px" alt="open navigation symbol">
         </button>
         <nav>
             <button class="close-btn" aria-label="Close Menu">&times;</button>
@@ -50,7 +50,7 @@
                 <source media="(min-width: 600px)" srcset="images/lake-photo-medium.webp">
                 <source media="(min-width: 300px)" srcset="images/lake-photo-small.webp">
 
-                <img src="images/lake-photo-large.webp" alt="Image of Londrina" loading="lazy">
+                <img src="images/lake-photo-large.webp" alt="Image of Londrina" width="400px">
 
             </picture>
             <button id="keynotes">Keynote Tickets</button>
@@ -69,7 +69,8 @@
         <section id="weather">
             <h2>Current Weather</h2>
             <div id="weather-info">
-                <img id="weather-icon" src="./images/favicon.ico" alt="Weather icon">
+                <img id="weather-icon" src="./images/favicon.ico" alt="Weather icon" loading="lazy" width="100"
+                    height="75">
                 <ul>
                     <li id="temp"></li>
                     <li id="weather-stat"></li>
