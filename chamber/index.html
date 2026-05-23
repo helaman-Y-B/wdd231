@@ -44,14 +44,18 @@
         </nav>
     </header>
     <main>
-        <picture id="hero-img">
-            <source media="(min-width: 1000px)" srcset="images/lake-photo-large.webp">
-            <source media="(min-width: 600px)" srcset="images/lake-photo-medium.webp">
-            <source media="(min-width: 300px)" srcset="images/lake-photo-small.webp">
+        <div id="hero-img">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/lake-photo-large.webp">
+                <source media="(min-width: 600px)" srcset="images/lake-photo-medium.webp">
+                <source media="(min-width: 300px)" srcset="images/lake-photo-small.webp">
 
-            <img src="images/lake-photo-large.webp" alt="Image of Londrina" loading="lazy">
+                <img src="images/lake-photo-large.webp" alt="Image of Londrina" loading="lazy">
+
+            </picture>
             <button id="keynotes">Keynote Tickets</button>
-        </picture>
+        </div>
+
 
         <h1>Welcome to Londrina</h1>
         <section id="events">
@@ -65,14 +69,16 @@
         <section id="weather">
             <h2>Current Weather</h2>
             <div id="weather-info">
-                <img id="weather-icon" src="" alt="">
-                <p id="temp"></p>
-                <p id="weather-stat"></p>
-                <p id="highest"></p>
-                <p id="lowest"></p>
-                <p id="humidity"></p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
+                <img id="weather-icon" src="./images/favicon.ico" alt="Weather icon">
+                <ul>
+                    <li id="temp"></li>
+                    <li id="weather-stat"></li>
+                    <li id="highest"></li>
+                    <li id="lowest"></li>
+                    <li id="humidity"></li>
+                    <li id="sunrise"></li>
+                    <li id="sunset"></li>
+                </ul>
             </div>
         </section>
         <section id="forecast">
@@ -84,6 +90,7 @@
             </div>
         </section>
         <section id="business">
+            <h2>Our Members</h2>
             <div id="business-info">
                 <div id="members-container">
                     <!--Members goes here-->

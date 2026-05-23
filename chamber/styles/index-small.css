@@ -98,9 +98,14 @@ img {
   grid-template-rows: 1fr 1fr;
 }
 
-#hero-img img {
+#hero-img picture {
   grid-column: 1 / span 4;
   grid-row: 1 / span 2;
+  max-width: 100%;
+  width: 100%;
+}
+
+#hero-img picture img {
   max-width: 100%;
   width: 100%;
 }
@@ -138,6 +143,7 @@ section {
 }
 
 section h2 {
+  text-align: center;
   background-color: var(--secondary-color);
   margin: 0px;
   padding: 20px;
@@ -145,6 +151,22 @@ section h2 {
 
 section div {
   padding: 0px 10px;
+}
+
+#weather div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#weather div ul {
+  font-family: var(--text-font);
+  list-style: none;
+  padding: 0px;
+}
+
+#weather div ul li {
+  margin: 5px 5px;
 }
 
 #business-info {

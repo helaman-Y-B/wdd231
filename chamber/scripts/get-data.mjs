@@ -1,4 +1,4 @@
-import { getApiData, getForecast } from "./forecast.mjs"
+import { getWeather, getForecast, getHours } from "./forecast.mjs"
 
 /**
  * Function responsible to get data from members.json file.
@@ -141,8 +141,11 @@ export async function displayIndexData() {
  */
 export async function displayForeCast() {
 
-    const weatherData = await getApiData();
+    const weatherData = await getWeather();
     const forecastData = await getForecast();
+
+    const sunriseTime = getHours(weatherData.sys.sunrise);
+    const sunsetTime = getHours(weatherData.sys.sunset);
 
     const weatherIcon = document.getElementById("weather-icon");
 
@@ -164,8 +167,8 @@ export async function displayForeCast() {
     highest.innerHTML = `High: ${weatherData.main.temp_max}`;
     lowest.innerHTML = `Low: ${weatherData.main.temp_min}`;
     humidity.innerHTML = `Humidity: ${weatherData.main.humidity}%`;
-    sunrise.innerHTML = `Sunrise: ${weatherData.sys.sunrise}`;
-    sunset.innerHTML = `Sunset: ${weatherData.sys.sunset}`;
+    sunrise.innerHTML = `Sunrise: ${sunriseTime}`;
+    sunset.innerHTML = `Sunset: ${sunsetTime}`;
 
     //Forecast
     const todayCast = document.getElementById("today-cast");

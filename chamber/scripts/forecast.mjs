@@ -4,7 +4,7 @@ const key = "0327868391c97cdf99a11d497a5a830f"
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`;
 const forecastUrl =`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${key}`
 
-export async function getApiData() {
+export async function getWeather() {
     try {
 
         const response = await fetch(weatherUrl)
@@ -44,4 +44,16 @@ export async function getForecast() {
     } catch(error) {
         console.error("Error fetching forecast data:", error);
     }
+}
+
+export function getHours(seconds, use12Hour = true) {
+    const date = new Date(seconds * 1000);
+
+    // format the date to show hours
+    return new Intl.DateTimeFormat('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: use12Hour // true for "3:00 PM", false for "15:00"
+    }).format(date);
+
 }
