@@ -12,7 +12,7 @@ async function getMembersData() {
         }
 
         const data = await response.json();
-        displayData(data.companies);
+        return data.companies;
 
     } catch(error){
         console.log(`Data not fetched ${error}`)
@@ -24,8 +24,9 @@ async function getMembersData() {
  * members-list class div in Directory.
  */
 
-function displayData(data) {
+export async function displayData() {
     let membersList = document.querySelector("#members-container");
+    const data = await getMembersData();
 
     data.forEach(member => {
 
@@ -90,4 +91,45 @@ function displayData(data) {
     });
 }
 
-getMembersData();
+export async function displayIndexData() {
+    let membersList = document.querySelector("#members-container");
+    const data = await getMembersData();
+
+    data.forEach(member => {
+        // Create and set attributes
+        const memberDiv = document.createElement("div");
+        memberDiv.setAttribute("class", "members")
+
+        const memberImg = document.createElement("img");
+        memberImg.setAttribute("src", `${member.image}`)
+        memberImg.setAttribute("alt", `Image of ${member.name}`)
+        memberImg.setAttribute("class", "member-image")
+
+        const memberName = document.createElement("h4");
+        memberName.setAttribute("class", `${member.name}`);
+
+        const memberInfo = document.createElement("ul");
+
+        const memberInfos = document.createElement("li");
+
+        //const webSiteLink = document.createElement("a");
+        //webSiteLink.setAttribute("href", `${member.website}`)
+
+        // Insert data into the elements.
+        memberName.textContent = `${member.name}`;
+        
+        // Insert text into the created elements.
+        memberInfos.innerHTML = `PHONE: ${member.contact}</br>
+                                URL: <a href=${member.website}> ${member.website}</a>`;
+
+        // Set everything to the parent container
+        memberDiv.appendChild(memberImg);
+        memberDiv.appendChild(memberName);
+
+        memberInfo.appendChild(memberInfos);
+
+        memberDiv.appendChild(memberInfo);
+
+        membersList.appendChild(memberDiv);
+    })
+}
