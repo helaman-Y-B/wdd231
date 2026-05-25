@@ -1,4 +1,5 @@
 import { getWeather, getForecast, getHours } from "./forecast.mjs"
+import randomizeMembers from "./randomize-members.mjs"
 
 /**
  * Function responsible to get data from members.json file.
@@ -95,12 +96,19 @@ export async function displayData() {
     });
 }
 
+/**
+ * Display the members of the commerce that are platinum and gold.
+ * The members displayed need to also appear ramdomly each time the page is reloaded.
+ */
 export async function displayIndexData() {
     let membersList = document.querySelector("#members-container");
     const data = await getMembersData();
 
-    data.forEach(member => {
+    const members = await randomizeMembers(data);
 
+    members.forEach(member => {
+
+        // If the memebrs is not gold or platinum, return the for loop and checks the next member.
         if (member.membership !== "gold" && member.membership !==  "platinum") {
             return;
         } 
@@ -119,9 +127,6 @@ export async function displayIndexData() {
         const memberInfo = document.createElement("ul");
 
         const memberInfos = document.createElement("li");
-
-        //const webSiteLink = document.createElement("a");
-        //webSiteLink.setAttribute("href", `${member.website}`)
 
         // Insert data into the elements.
         memberName.textContent = `${member.name}`;
@@ -143,7 +148,7 @@ export async function displayIndexData() {
 }
 
 /**
- * Isert the data from the API into the index page.
+ * Isert the data from the Weather API into the index page.
  */
 export async function displayForeCast() {
 
