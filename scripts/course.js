@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -74,7 +74,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     }
 ]
 
@@ -103,6 +103,32 @@ function displayCourses() {
         };
 
         coursesUl.appendChild(li);
+
+        // Creates a dialog and add an event listener to it.
+        const modal = document.createElement("dialog");
+        modal.setAttribute("class", "open-course");
+
+        modal.innerHTML = `
+        <h2 class="course-name">${course.subject} ${course.number}</h2>
+        <button class="close-modal">X</button>
+        <p class="credits">${course.credits} credits</p>
+        <p class="certificate">${course.certificate} credits</p>
+        <p class="description">${course.description} credits</p>
+        <p class="technology">${course.technology}</p>
+        `;
+
+        li.append(modal);
+
+        // Opens the Modal
+        li.addEventListener("click", () => {
+            modal.showModal();
+        })
+        // Closes the Modal
+        const closeBtn = modal.querySelector(".close-modal");
+        closeBtn.addEventListener("click", () => {
+            event.stopPropagation(); // prevents reopening since for some reason the li event was being called again.
+            modal.close();
+        })
     });
 }
 
