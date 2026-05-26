@@ -148,6 +148,32 @@ section p {
     margin: 5px;
 }
 
+dialog {
+    background-color: var(--third-color);
+    border-style: inset;
+    border-color: var(--fourth-color);
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+dialog div {
+    display: flex;
+    background-color: var(--second-color);
+}
+
+dialog div h2 {
+ width: 100%;
+}
+
+dialog div button {
+    width: 50px;
+    border-style: inset;
+    border-color: var(--fourth-color);
+    border-width: 2px;
+    border-radius: 5px;
+}
+
 footer {
     background-color: var(--fourth-color);
     color: var(--main-color);

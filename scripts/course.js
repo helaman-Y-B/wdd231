@@ -109,8 +109,10 @@ function displayCourses() {
         modal.setAttribute("class", "open-course");
 
         modal.innerHTML = `
-        <h2 class="course-name">${course.subject} ${course.number}</h2>
-        <button class="close-modal">X</button>
+        <div>
+            <h2 class="course-name">${course.subject} ${course.number}</h2>
+            <button class="close-modal">X</button>
+        </div>
         <p class="credits">${course.credits} credits</p>
         <p class="certificate">${course.certificate} credits</p>
         <p class="description">${course.description} credits</p>
