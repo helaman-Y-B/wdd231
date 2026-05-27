@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LondriWay C.C Join Page</title>
+    <meta name="author" content="Helamã Y. Barbour">
+    <meta name="description"
+        content="The purpouse of the join page is to show how people can become a member of the LondriWay. It also display the different suscriptions.">
+    <meta property="og:title" content="LondriWay Join Page">
+    <meta property="og:description"
+        content="The purpouse of the join page is to show how people can become a member of the LondriWay. It also display the different suscriptions.">
+    <meta property="og:image" content="https://helaman-y-b.github.io/wdd231/chamber/images/park-bridge-large.webp">
+    <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/chamber/join.html">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/common-script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/londrin-way-logo.webp" width="75" alt="E-commerce logo">
+        <span>LondriWay E-commerce</span>
+        <button id="menu-toggle" aria-label="Open Menu">
+            <img src="images/nav-icon-32x32.png" width="32" alt="open navigation symbol">
+        </button>
+        <nav>
+            <button class="close-btn" aria-label="Close Menu">&times;</button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li id="selected"><a href="/">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join US!</h1>
+        <div>
+            <h2>But WHY should you join us?</h2>
+            <p>With LondriWay you can find those that really want to see you grow. 
+                You don't need to do everything on your on to be known in our city, you only need to join them!<br><br>
+            If you are interested, sign in using the form below</p>
+        </div>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Subscriber name</legend>
+                <label for="f-name">First Name</label>
+                <input type="text" name="f-name">
+                <label for="l-name">Last Name</label>
+                <input type="text" name="l-name">
+            </fieldset>
+            <fieldset>
+                <legend>Account creation</legend>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="something@gmail.com">
+                <label for="password">Crate a password</label>
+                <input type="password" name="password" id="password">
+            </fieldset>
+            <fieldset>
+                <legend>Select a Membership</legend>
+                <input type="radio" name="membership" id="bronze">
+                <label for="bronze">Bronze</label>
+                <input type="radio" name="membership" id="silver">
+                <label for="silver">Silver</label>
+                <input type="radio" name="membership" id="gold">
+                <label for="gold">Gold</label>
+                <input type="radio" name="membership" id="platinum">
+                <label for="platinum">Platinum</label>
+            </fieldset>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
