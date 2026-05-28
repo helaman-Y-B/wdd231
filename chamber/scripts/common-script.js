@@ -33,6 +33,6 @@ sideBar.addEventListener("click", () => {
 //Closes the navigation bar
 closeBtn.addEventListener("click", () => {
     
-    nav.setAttribute("class", "is-closed")
+    nav.setAttribute("class", "is-close")
     
 })

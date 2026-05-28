@@ -49,7 +49,7 @@ header img {
   margin-left: auto;
 }
 
-nav {
+.is-close {
   /*display: none;*/
   /*default style for the navigation bar*/
   background-color: rgba(147, 192, 177, 0.8);
