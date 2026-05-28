@@ -19,20 +19,20 @@ const closeBtn = document.querySelector(".close-btn")
 // When screen sizes changes, then if the width is bigger or equal to 526px, removes the inline style from nav.
 window.addEventListener("resize", () => {
     if(window.innerWidth >= 526) {
-        nav.style.display = "";
+        nav.setAttribute("class", "is-open")
     }
 })
 
 // Opens the navigation bar
 sideBar.addEventListener("click", () => {
     
-    nav.style.display = "block";
+    nav.setAttribute("class", "is-open")
     
 })
 
 //Closes the navigation bar
 closeBtn.addEventListener("click", () => {
     
-    nav.style.display = "none";
+    nav.setAttribute("class", "is-closed")
     
 })

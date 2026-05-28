@@ -51,16 +51,36 @@ header img {
 }
 
 nav {
-  display: none;
+  /*display: none;*/
+  /*default style for the navigation bar*/
   background-color: rgba(147, 192, 177, 0.8);
   grid-column: span 2 / -1;
   position: fixed;
-  top: 0;
   right: 0;
+  top: 0;
   width: 80%;
   height: 100%;
   z-index: 1000;
   justify-content: flex-end;
+
+  /*Basically you can hide the navigation bar by leaving it off screen
+  and leave the opacity to 0 and then create a class for the element that 
+  will make it appear again I don't need to use display: none;*/
+  opacity: 0;
+  visibility: hidden; /* Looks like this prevents users from clicking links while they are hidden */
+  transform: translateX(200px); /* Starts 200px off screen*/
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.3s ease,
+    visibility 0.3s;
+}
+
+/* This class is added via JavaScript when clicked */
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0); /* Slides to the side */
 }
 
 .close-btn {
