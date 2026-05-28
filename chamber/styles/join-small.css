@@ -93,19 +93,71 @@ ul li a:link {
   text-decoration: none;
 }
 
+h1 {
+  margin-left: 10px;
+}
+
 main div {
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
+  border: var(--secondary-color);
+  border-radius: 10px;
+  border-style: outset;
+  margin: 0px 10px;
 }
 
 main div h2 {
   background-color: var(--secondary-color);
-  padding: 0px 10px;
+  margin: 0px;
+  padding: 10px 10px;
 }
 
 main div p {
   padding: 0px 10px;
+}
+
+form {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  border: var(--secondary-color);
+  border-radius: 10px;
+  border-style: outset;
+  margin: 10px 10px;
+  gap: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: var(--background-color);
+  border-radius: 10px;
+  border-style: inset;
+  margin: 0px 10px;
+}
+
+fieldset legend {
+  font-family: var(--header-font);
+  padding: 10px;
+}
+
+fieldset label {
+  font-family: var(--text-font);
+}
+
+fieldset input {
+  font-family: var(--text-font);
+}
+
+form button {
+  background-color: var(--background-color);
+  font-family: var(--header-font);
+  border: var(--secondary-color);
+  border-radius: 10px;
+  border-style: outset;
+  margin: 10px 10px;
+  padding: 10px;
 }
 
 footer {
