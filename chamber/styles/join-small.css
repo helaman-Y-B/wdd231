@@ -93,6 +93,21 @@ ul li a:link {
   text-decoration: none;
 }
 
+main div {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+main div h2 {
+  background-color: var(--secondary-color);
+  padding: 0px 10px;
+}
+
+main div p {
+  padding: 0px 10px;
+}
+
 footer {
   background-color: var(--primary-color);
   text-align: center;
