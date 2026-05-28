@@ -100,7 +100,6 @@ h1 {
 picture {
   max-width: 100%;
   width: 100%;
-  align-items: center;
 }
 
 picture img {
@@ -112,7 +111,7 @@ picture img {
   display: block;
 }
 
-main div {
+#the-why {
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -122,13 +121,13 @@ main div {
   margin: 0px 10px;
 }
 
-main div h2 {
+#the-why h2 {
   background-color: var(--secondary-color);
   margin: 0px;
   padding: 10px 10px;
 }
 
-main div p {
+#the-why p {
   padding: 0px 10px;
 }
 

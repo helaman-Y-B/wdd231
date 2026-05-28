@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -42,20 +43,24 @@
     </header>
     <main>
         <h1>Join US!</h1>
-        <picture>
-            <source media="(min-width: 1000px)" srcset="images/lake-photo-large.webp">
-            <source media="(min-width: 600px)" srcset="images/lake-photo-medium.webp">
-            <source media="(min-width: 300px)" srcset="images/winter-lake-medium.webp">
-
-            <img src="images/lake-photo-large.webp" alt="Image of Londrina" width="400">
-
-        </picture>
         <div>
-            <h2>But WHY should you join us?</h2>
-            <p>With LondriWay you can find those that really want to see you grow.
-                You don't need to do everything on your on to be known in our city, you only need to join them!<br><br>
-                If you are interested, sign in using the form below</p>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/lake-photo-large.webp">
+                <source media="(min-width: 600px)" srcset="images/lake-photo-medium.webp">
+                <source media="(min-width: 300px)" srcset="images/winter-lake-medium.webp">
+
+                <img src="images/lake-photo-large.webp" alt="Image of Londrina" width="400">
+
+            </picture>
+            <div id="the-why">
+                <h2>But WHY should you join us?</h2>
+                <p>With LondriWay you can find those that really want to see you grow.
+                    You don't need to do everything on your on to be known in our city, you only need to join
+                    them!<br><br>
+                    If you are interested, sign in using the form below</p>
+            </div>
         </div>
+
         <form action="thankyou.html" method="get">
             <fieldset>
                 <legend>Subscriber name</legend>
@@ -73,14 +78,23 @@
             </fieldset>
             <fieldset>
                 <legend>Select a Membership</legend>
-                <input type="radio" name="membership" id="bronze">
-                <label for="bronze">Bronze</label>
-                <input type="radio" name="membership" id="silver">
-                <label for="silver">Silver</label>
-                <input type="radio" name="membership" id="gold">
-                <label for="gold">Gold</label>
-                <input type="radio" name="membership" id="platinum">
-                <label for="platinum">Platinum</label>
+                <div>
+                    <label for="bronze">Bronze</label>
+                    <input type="radio" name="membership" id="bronze">
+                </div>
+                <div>
+                    <label for="silver">Silver</label>
+                    <input type="radio" name="membership" id="silver">
+                </div>
+                <div>
+                    <label for="gold">Gold</label>
+                    <input type="radio" name="membership" id="gold">
+                </div>
+                <div>
+                    <label for="platinum">Platinum</label>
+                    <input type="radio" name="membership" id="platinum">
+                </div>
+
             </fieldset>
             <button type="submit">SUBMIT</button>
         </form>

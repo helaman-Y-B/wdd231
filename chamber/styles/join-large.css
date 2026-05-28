@@ -1,0 +1,96 @@
+@media screen and (min-width: 526px) {
+  header span {
+    text-align: left;
+    grid-column: 2 / span 2;
+  }
+
+  #menu-toggle img {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    grid-column: 1 / span 3;
+    position: initial;
+    width: 100%;
+    max-height: 80px;
+    justify-content: center;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  #selected {
+    border-bottom: 5px solid black;
+  }
+
+  nav ul li a {
+    display: block;
+    width: auto;
+    padding: 25px;
+  }
+
+  main {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  main div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0px 10px;
+  }
+
+  picture img {
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  #the-why {
+    margin: 0;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0fr;
+  }
+
+  form button {
+    grid-column: 1 / span 2;
+  }
+
+  fieldset:nth-of-type(3) {
+    grid-column: 1 / span 2;
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  fieldset:nth-of-type(3) div {
+    text-align: center;
+    align-items: center;
+  }
+
+  fieldset:nth-of-type(3) div input {
+    width: 15%;
+  }
+}
