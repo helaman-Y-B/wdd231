@@ -184,6 +184,37 @@ fieldset input {
   font-family: var(--text-font);
 }
 
+dialog {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  margin: auto;
+  padding: 0px;
+}
+
+dialog div {
+  font-family: var(--header-font);
+  background-color: var(--primary-color);
+  margin: 0px;
+  display: flex;
+}
+
+
+dialog h2 {
+  text-align: center;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+dialog button {
+  height: 90%;
+}
+
+dialog ul {
+  font-family: var(--text-font);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 form button {
   background-color: var(--background-color);
   font-family: var(--header-font);

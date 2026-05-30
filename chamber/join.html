@@ -23,6 +23,7 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="scripts/common-script.js" defer></script>
+    <script type="module" src="scripts/join-controller.mjs"></script>
 </head>
 
 <body>
@@ -82,18 +83,81 @@
                     <label for="bronze">Bronze</label>
                     <input type="radio" name="membership" id="bronze">
                 </div>
+                
+                <dialog id="bronze-modal">
+                    <div>
+                        <h2>The Benefits of a Bronze Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+                    
+                    <ul>
+                        <li>Access to basic features and content</li>
+                        <li>Monthly newsletter updates</li>
+                        <li>Community forum access</li>
+                    </ul>
+                </dialog>
+
                 <div>
                     <label for="silver">Silver</label>
                     <input type="radio" name="membership" id="silver">
                 </div>
+                <dialog id="silver-modal">
+                    <div>
+                        <h2>The Benefits of a Silver Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+                    
+                    <ul>
+                        <li>All Bronze benefits included</li>
+                        <li>Access to exclusive articles and resources</li>
+                        <li>Priority email support</li>
+                        <li>Early access to new features</li>
+                        <li>Participation in member-only events</li>
+                    </ul>
+                </dialog>
+
                 <div>
                     <label for="gold">Gold</label>
                     <input type="radio" name="membership" id="gold">
                 </div>
+                <dialog id="gold-modal">
+                    <div>
+                        <h2>The Benefits of a Gold Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+                    <ul>
+                        <li>All Silver benefits included</li>
+                        <li>Personalized recommendations</li>
+                        <li>Access to premium content and tools</li>
+                        <li>Live webinars and training sessions</li>
+                        <li>Priority customer support (faster response time)</li>
+                        <li>Discounts on partner services</li>
+                    </ul>
+                    
+                </dialog>
+
                 <div>
                     <label for="platinum">Platinum</label>
                     <input type="radio" name="membership" id="platinum">
                 </div>
+                <dialog id="platinum-modal">
+                    <div>
+                        <h2>The Benefits of a Platinum Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+                    
+                    <ul>
+                        <li>All Gold benefits included</li>
+                        <li>Dedicated account manager</li>
+                        <li>One-on-one consulting sessions</li>
+                        <li>Exclusive VIP events access</li>
+                        <li>Custom feature requests priority</li>
+                        <li>Advanced analytics and insights</li>
+                        <li>Early beta access to new products</li>
+                        <li>Special recognition within the community</li>
+                    </ul>
+                </dialog>
+
 
             </fieldset>
             <button type="submit">SUBMIT</button>

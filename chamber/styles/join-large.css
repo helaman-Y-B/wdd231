@@ -93,4 +93,21 @@
   fieldset:nth-of-type(3) div input {
     width: 15%;
   }
+
+  dialog {
+    max-width: 450px;
+  }
+
+  dialog div {
+    display: flex;
+    margin: 0px;
+  }
+
+  dialog h2 {
+    font-size: 30px;
+  }
+
+  dialog ul {
+    font-size: 25px;
+  }
 }
