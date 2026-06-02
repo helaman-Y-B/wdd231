@@ -187,10 +187,52 @@ fieldset input {
 }
 
 dialog {
-  background-color: var(--background-color);
+  border-width: 0px;
   border-radius: 10px;
   margin: auto;
   padding: 0px;
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
+  overflow: visible; /* "Removes the scrow bar hahaha" */
+}
+
+
+dialog[open]::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: inherit;
+
+  background: conic-gradient(from var(--angle),
+    #d7ffd2,
+    #64b180,
+    #2f533c,
+    #d7ffd2
+  );
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+  animation: moving-border 3s linear infinite;
+}
+
+/* The --angle property needed to be created so that the animation may work. 
+  Because it's not possible to animate the background-image property directly 
+  the property --angle is used to control the rotation of the conic gradient */
+@property --angle {
+  syntax: '<angle>'; /* Indicates that the value is a number */
+  initial-value: 0deg; /* Indicates that the value starts at 0 degrees */
+  inherits: false; /* Indicates that the value does not inherit from its parent element */
+}
+
+/* Changes the --angle property over time */
+@keyframes moving-border {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 dialog div {
@@ -198,6 +240,7 @@ dialog div {
   background-color: var(--primary-color);
   margin: 0px;
   display: flex;
+  border-radius: 10px 10px 0px 0px;
 }
 
 
@@ -212,9 +255,13 @@ dialog button {
 }
 
 dialog ul {
+  background-color: var(--background-color);
   font-family: var(--text-font);
   font-size: 20px;
-  margin-right: 10px;
+  margin: 0px;
+  padding: 10px 0px;
+  padding-left: 50px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 form button {
