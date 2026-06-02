@@ -65,17 +65,26 @@
         <form action="thankyou.html" method="get">
             <fieldset>
                 <legend>Subscriber name</legend>
-                <label for="f-name">First Name</label>
-                <input type="text" name="f-name" id="f-name">
-                <label for="l-name">Last Name</label>
-                <input type="text" name="l-name" id="l-name">
+                <label for="f-name">First Name:</label>
+                <input type="text" name="f-name" id="f-name" title="First name of the client" autocomplete="given-name" required>
+                <label for="l-name">Last Name:</label>
+                <input type="text" name="l-name" id="l-name" title="Last name of the client" autocomplete="family-name" required>
             </fieldset>
             <fieldset>
-                <legend>Account creation</legend>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" placeholder="something@gmail.com" id="email">
-                <label for="password">Crate a password</label>
-                <input type="password" name="password" id="password">
+                <legend>Organization's contact information</legend>
+                <label for="email">E-mail:</label>
+                <input type="email" title="The E-mail" name="email" placeholder="something@gmail.com" id="email" autocomplete="email" required>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" name="phone-number" title="The phone Number" autocomplete="tel" id="phone-number" required>
+            </fieldset>
+            <fieldset>
+                <legend>Organization's Information</legend>
+                <label for="title">Organization Title:</label>
+                <input type="text" placeholder="My Title" title="Organization title" autocomplete="organization-title" id="title" name="title">
+                <label for="organization-name">Business/Organization's Name:</label>
+                <input type="text" name="organization-name" title="Business/Organization's Name" autocomplete="organization" id="organization-name" name="organization-name">
+                <label for="description">Business Description:</label>
+                <textarea name="description" id="description" title="A description of the business"></textarea>
             </fieldset>
             <fieldset>
                 <legend>Select a Membership</legend>
@@ -160,6 +169,7 @@
 
 
             </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
             <button type="submit">SUBMIT</button>
         </form>
     </main>

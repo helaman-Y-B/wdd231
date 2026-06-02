@@ -165,6 +165,7 @@ form {
 fieldset {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   border: var(--background-color);
   border-radius: 10px;
   border-style: inset;
@@ -174,6 +175,7 @@ fieldset {
 fieldset legend {
   font-family: var(--header-font);
   padding: 10px;
+  text-align: center;
 }
 
 fieldset label {

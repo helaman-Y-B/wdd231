@@ -71,6 +71,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 0fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  fieldset {
+    width: 80%;
+    margin: auto;
+    display: flex;
+  }
+
+  fieldset legend {
+    text-align: left;
   }
 
   form button {
@@ -79,18 +91,20 @@
 
   fieldset:nth-of-type(3) {
     grid-column: 1 / span 2;
-    max-width: 70%;
-    margin: auto;
-    display: flex;
-    gap: 10px;
+    max-width: 90%;
   }
 
-  fieldset:nth-of-type(3) div {
+  fieldset:nth-of-type(4) {
+    grid-column: 1 / span 2;
+    max-width: 70%;
+  }
+
+  fieldset:nth-of-type(4) div {
     text-align: center;
     align-items: center;
   }
 
-  fieldset:nth-of-type(3) div input {
+  fieldset:nth-of-type(4) div input {
     width: 15%;
   }
 
