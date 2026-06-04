@@ -259,3 +259,9 @@ section h2 {
     background-color: var(--primary-color);
     padding: 25px;
 }
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+}
