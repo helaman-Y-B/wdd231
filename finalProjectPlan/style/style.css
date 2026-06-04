@@ -1,8 +1,8 @@
 :root {
   --background-color: #F1F7EE;
-  --primary-color: #B0BEA9;
-  --secondary-color: #97B485;
-  --tertiary-color: #445F46;
+  --primary-color: #445F46;
+  --secondary-color: #B0BEA9;
+  --tertiary-color: #97B485;
   --quaternary-color: #082D39;
   --header-font: "rubik", Arial, Helvetica, sans-serif;
   --text-font: "inter", Georgia, Times, serif;
@@ -34,6 +34,7 @@ header {
     font-size: 25px;
     padding: 25px;
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 main {
@@ -43,12 +44,12 @@ main {
 }
 
 section {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     margin: 15px 0px;
 }
 
 section h2 {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     text-align: center;
     padding: 10px;
 }
@@ -60,7 +61,6 @@ section h2 {
 
 .scenarios h3 {
     background-color: var(--tertiary-color);
-    color: var(--background-color);
     padding: 10px;
 }
 
@@ -93,13 +93,13 @@ section h2 {
 
 #primary {
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 #secondary {
     background-color: var(--secondary-color);
 }
 #tertiary {
     background-color: var(--tertiary-color);
-    color: var(--background-color);
 }
 #quaternary {
     background-color: var(--quaternary-color);
@@ -128,6 +128,7 @@ section h2 {
 
 #header-phone {
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 #header-phone span {
@@ -140,6 +141,7 @@ section h2 {
     background-color: var(--secondary-color);
     font-family: var(--text-font);
     text-align: center;
+    color: black;
 }
 
 #header-phone nav ul {
@@ -188,6 +190,7 @@ section h2 {
 
 #header-wide {
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 #header-wide span {
@@ -200,6 +203,7 @@ section h2 {
     background-color: var(--secondary-color);
     font-family: var(--text-font);
     text-align: center;
+    color: black;
 }
 
 #header-wide nav ul {
