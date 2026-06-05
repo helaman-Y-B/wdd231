@@ -18,7 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:wght@800&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/last-modified.js" defer></script>
@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <img src="imgs/favicon.ico" alt="Share Hike Icon image">
+        <img src="images/favicon.ico" alt="Share Hike Icon image">
         <span>Share Hike</span>
         <p>🢁</p>
         <nav>
@@ -40,7 +40,12 @@
     <main>
         <h1>Welcome to Share Hike!</h1>
         <picture>
-            <img src="imgs/" alt="Pictures of a hike">
+            <source media="(min-width: 700px)" srcset="images/hero-1000.webp">
+            <source media="(min-width: 500px)" srcset="images/hero-700.webp">
+            <source media="(min-width: 400px)" srcset="images/mautain-hike500.webp">
+            <source media="(min-width: 300px)" srcset="images/mautain-hike400.webp">
+
+            <img src="images/hero-1000.webp" alt="Picture of a lake with a waterfall.">
         </picture>
         <section id="purpouse">
             <h2>Our purpose</h2>
@@ -59,7 +64,7 @@
         <section id="highlights">
             <h2>Daniela</h2>
             <picture>
-                <img src="imgs/"
+                <img src="images/"
                     alt="A picture of a hike that a member called Daniela took in Londrina. Paraná, Brazil">
             </picture>
             <p>Something Something Something Something Something Something Something Something Something Something
@@ -71,9 +76,9 @@
     <footer>
         <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
         <div id="media">
-            <img src="imgs/facebook-f-brands-solid-full-small.webp" alt="Facebook icon">
-            <img src="imgs/x-twitter-brands-solid-full-small.webp" alt="X icon">
-            <img src="imgs/instagram-brands-solid-full-small.webp" alt="Instagram icon">
+            <img src="images/facebook-f-brands-solid-full-small.webp" alt="Facebook icon">
+            <img src="images/x-twitter-brands-solid-full-small.webp" alt="X icon">
+            <img src="images/instagram-brands-solid-full-small.webp" alt="Instagram icon">
         </div>
         <p id="lastModified"></p>
     </footer>
