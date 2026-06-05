@@ -53,7 +53,18 @@ header p {
   margin: 0px;
 }
 
-header nav {
+#close-nav {
+  display: none;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  background-color: var(--tertiary-color);
+  font-family: var(--text-font);
+  text-align: center;
+  height: 100%;
+}
+
+#open-nav {
+  display: block;
   grid-column: 1 / span 3;
   grid-row: 2;
   background-color: var(--tertiary-color);
