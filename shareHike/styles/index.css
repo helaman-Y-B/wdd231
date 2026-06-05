@@ -24,11 +24,12 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 0fr 1fr;
+  grid-template-columns: 0fr 1fr 0fr;
   grid-template-rows: 0fr 0fr;
   align-items: center;
   background-color: var(--primary-color);
   color: var(--background-color);
+  font-size: 20px;
 }
 
 header img {
@@ -42,11 +43,18 @@ header span {
   grid-row: 1;
   font-family: var(--header-font);
   display: block;
-  padding: 15px;
+  padding: 25px;
+}
+
+header p {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 25px;
+  margin: 0px;
 }
 
 header nav {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   grid-row: 2;
   background-color: var(--tertiary-color);
   font-family: var(--text-font);
@@ -116,4 +124,16 @@ footer {
   color: var(--background-color);
   padding: 25px;
   text-align: center;
+}
+
+footer img {
+  max-width: 40px;
+}
+
+#media {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
