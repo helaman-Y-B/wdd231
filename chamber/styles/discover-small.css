@@ -1,0 +1,120 @@
+:root {
+  --background-color: #f3f3f3;
+  --primary-color: #acdbbd;
+  --secondary-color: #93c0b1;
+  --header-font: "Archivo Black", Arial, Helvetica, sans-serif;
+  --text-font: "Barlow Semi Condensed", Georgia, Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header-font);
+}
+
+p {
+  font-family: var(--text-font);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  font-family: var(--header-font);
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  max-width: 80px;
+}
+
+#menu-toggle img {
+  width: 50%;
+  max-width: 30px;
+}
+
+#menu-toggle {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  border: 0px;
+  margin-left: auto;
+}
+
+nav {
+  /*display: none;*/
+  /*default style for the navigation bar*/
+  background-color: rgba(147, 192, 177, 0.8);
+  grid-column: span 2 / -1;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  z-index: 1000;
+  justify-content: flex-end;
+
+  /*Basically you can hide the navigation bar by leaving it off screen
+  and leave the opacity to 0 and then create a class for the element that 
+  will make it appear again I don't need to use display: none;*/
+  opacity: 0;
+  visibility: hidden; /* Looks like this prevents users from clicking links while they are hidden */
+  transform: translateX(200px); /* Starts 200px off screen*/
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.3s ease,
+    visibility 0.3s;
+}
+
+/* This class is added via JavaScript when clicked */
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0); /* Slides to the side */
+}
+
+.close-btn {
+  background-color: var(--background-color);
+  border: 0px;
+  width: 100%;
+  padding: 20px;
+}
+
+nav ul {
+  background-color: rgba(147, 192, 177, 1);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#selected {
+  background-color: #70a794;
+}
+
+nav ul li a {
+  color: black;
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+}
+
+ul li a:link {
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 10px;
+}

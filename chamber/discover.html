@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LondriWay C.C Discovery Page</title>
+    <meta name="author" content="Helamã Y. Barbour">
+    <meta name="description"
+        content="The purpouse of the discover page is to help people to discover new things in Londrina.">
+    <meta property="og:title" content="LondriWay Discover Page">
+    <meta property="og:description"
+        content="The purpouse of the discover page is to help people to discover new things in Londrina.">
+    <meta property="og:image" content="https://helaman-y-b.github.io/wdd231/chamber/images/park-bridge-large.webp">
+    <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/chamber/discover.html">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <script src="scripts/common-script.js" defer></script>
+    <script type="module" src="scripts/discover-controller.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/londrin-way-logo.webp" width="75" alt="E-commerce logo">
+        <span>LondriWay E-commerce</span>
+        <button id="menu-toggle" aria-label="Open Menu">
+            <img src="images/nav-icon-32x32.png" width="32" alt="open navigation symbol">
+        </button>
+        <nav>
+            <button class="close-btn" aria-label="Close Menu">&times;</button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li id="selected"><a href="./discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="discover"></section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

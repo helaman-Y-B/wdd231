@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Zaki Sabor Árabe",
+            "address": "Av. Aminthas de Barros, 399 - Ipanema, Londrina - PR, 86015-180",
+            "description": "A new Arabian restaurant with their tradition and delicius dishes.",
+            "photo": "images/arabian-restaurant.webp"
+        },
+        {
+            "name": "Candle lights Event",
+            "address": "Av. Rio de Janeiro, 700 - Centro, Londrina - PR, 86010-150",
+            "description": "A musical event played with classic instruments in an ambient that will take your breath away.",
+            "photo": "images/candles.webp"
+        },
+        {
+            "name": "Christmas event on top of a lake",
+            "address": "R. da Canoagem, 2 - Igapó, Londrina - PR, 86015-840",
+            "description": "A christmas event where a bridge is layed on top of the Igapó lake and people can walk into and see up close the bright christmas tree.",
+            "photo": "images/christmas.webp"
+        },
+        {
+            "name": "Hallowing Café",
+            "address": "R. Dep. Fernando Ferrari, 1073 - Campo Belo",
+            "description": "A theme café where they sell delicius waffles and mistery potions.",
+            "photo": "images/potion.webp"
+        },
+        {
+            "name": "Tempo in the city",
+            "address": "Av. Harry Prochet, 401 - Jardim Sao Jorge, Londrina - PR, 86063-460",
+            "description": "An event to announce the constrution of a Latter Day Saint temple in the city.",
+            "photo": "images/temple-event.webp"
+        },
+        {
+            "name": "The best Vitamin in the city",
+            "address": "R. Mato Grosso, 313 - Centro, Londrina - PR, 86010-180",
+            "description": "A restaurant that sells their famous avocado vitamin blend and Pastel. Truly a great combination.",
+            "photo": "images/vitamin.webp"
+        },
+        {
+            "name": "Lake bridge",
+            "address": "R. Prof. Joaquim de Matos Barreto, 1146 - Lima Azevedo, Londrina - PR, 86060-010",
+            "description": "A wonderful park to spend time with your family and frinds.",
+            "photo": "images/park-bridge-medium.webp"
+        },
+        {
+            "name": "The Igapó Lake",
+            "address": "R. Prof. Joaquim de Matos Barreto - Lima Azevedo, Londrina - PR, 86060-010",
+            "description": "There is nothing more relaxing then going around the Igapó lake.",
+            "photo": "images/lake-photo-medium.webp"
+        }
+    ]
+}

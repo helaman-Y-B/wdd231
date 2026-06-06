@@ -191,3 +191,49 @@ export async function displayForeCast() {
     toworrowCast.innerHTML = `Tomorrow: ${forecastData[0].main.temp}C`;
     twodayCast.innerHTML = `After Tomorrow: ${forecastData[1].main.temp}C`;
 }
+
+/**
+ * Function responsible to fetch the data from discover.json
+ */
+
+async function discoverData() {
+    try {
+
+        const response = await fetch("./data/discover.json");
+
+        if(!response.ok) {
+            throw new Error(`Bad resquest - Data not found.`)
+        }
+
+        const data = await response.json();
+        return data.places;
+
+    } catch(error){
+        console.log(`Data not fetched ${error}`)
+    }
+}
+
+/**
+ * Function responsible to construct the html for the discover web page.
+ */
+
+export async function discoverItem() {
+    const data = await discoverData();
+
+    const discoverSection = document.querySelector("#discover");
+
+    let html = "";
+
+    data.forEach(item => {
+        html += `
+            <div class="card">
+                <h2>${item.name}</h2>
+                <img src="${item.photo}" alt="${item.description}">
+                <p>${item.description}</p>
+                <p>Address: ${item.address}</p>
+            </div>
+        `
+    });
+
+    discoverSection.insertAdjacentHTML("beforeend", html)
+}
