@@ -23,6 +23,9 @@ body {
 }
 
 header {
+  width: 100%;
+  top: 0;
+  position: fixed;
   display: grid;
   grid-template-columns: 0fr 1fr 0fr;
   grid-template-rows: 0fr 0fr;
@@ -51,26 +54,39 @@ header p {
   grid-row: 1;
   padding: 25px;
   margin: 0px;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease-in-out 0.5s;
 }
 
-#close-nav {
-  display: none;
+header p.open-btn {
+  transform: rotate(90deg);
+}
+
+nav.open {
+  transform: translateX(0);
+  /* Return to original position */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav {
   grid-column: 1 / span 3;
   grid-row: 2;
   background-color: var(--tertiary-color);
   font-family: var(--text-font);
   text-align: center;
-  height: 100%;
-}
-
-#open-nav {
-  display: block;
-  grid-column: 1 / span 3;
-  grid-row: 2;
-  background-color: var(--tertiary-color);
-  font-family: var(--text-font);
-  text-align: center;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: min-content;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  /* Looks like this prevents users from clicking links while they are hidden */
+  transition:
+    opacity 0.5s ease-in-out 0.3s,
+    transform 0.3s ease-in-out 0.5s
 }
 
 header nav ul {
@@ -94,6 +110,10 @@ nav ul li a {
 
 ul li a:link {
   text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
 }
 
 main h1 {

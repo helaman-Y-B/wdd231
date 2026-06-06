@@ -14,40 +14,11 @@ document.getElementById("lastModified").textContent = `Last modification: ${docu
 const navArrowOpen = document.querySelector("#open-nav-btn");
 const nav = document.querySelector("nav");
 
-// Creates the first eventListener and then calls the closeNav function to create the close eventListener.
-// After that an infinite loop of adding events listeners is created.
+// Creates the first eventListener
 navArrowOpen.addEventListener("click", () => {
     
-    navArrowOpen.setAttribute("id", "close-nav-btn");
-    nav.setAttribute("id", "open-nav");
-
-    closeNav()
+    nav.classList.toggle("open");
+    navArrowOpen.classList.toggle("open-btn");
     
 })
-
-// Creates the eventListener of opening the navigation
-function openNav() {
-    const navArrowOpen = document.querySelector("#open-nav-btn");
-    navArrowOpen.addEventListener("click", () => {
-    
-        navArrowOpen.setAttribute("id", "close-nav-btn");
-        nav.setAttribute("id", "open-nav");
-
-        closeNav()
-    
-    })
-}
-
-// Creates the eventListener of closing the navigation
-function closeNav() {
-    const navArrowClose = document.querySelector("#close-nav-btn")
-
-    navArrowClose.addEventListener("click", () => {
-    
-        navArrowClose.setAttribute("id", "open-nav-btn");
-        nav.setAttribute("id", "close-nav");
-
-        openNav()
-    })
-}
 
