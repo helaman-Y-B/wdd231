@@ -113,6 +113,37 @@ ul li a:link {
   text-decoration: none;
 }
 
+#discover {
+  background-color: var(--primary-color);
+  margin: 10px;
+  padding: 20px 10px;
+  border: var(--secondary-color);
+  border-radius: 10px;
+  border-style: outset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#discover h2 {
+  text-align: center;
+}
+
+.card {
+  margin: auto;
+  max-width: 400px;
+  padding: 0px 15px 15px 15px;
+  background-color: var(--secondary-color);
+  border: var(--primary-color);
+  border-radius: 10px;
+  border-style: inset;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 footer {
   background-color: var(--primary-color);
   text-align: center;
