@@ -228,7 +228,7 @@ export async function discoverItem() {
         html += `
             <div class="card">
                 <h2>${item.name}</h2>
-                <img src="${item.photo}" alt="${item.description}">
+                <img src="${item.photo}" alt="${item.description}" fetchpriority="high" width="400" height="400">
                 <p>${item.description}</p>
                 <p>Address: ${item.address}</p>
             </div>

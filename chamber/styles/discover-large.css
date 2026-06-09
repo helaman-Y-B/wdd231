@@ -12,7 +12,7 @@
     display: none;
   }
 
-  .is-open {
+  nav {
     display: flex;
     grid-column: 1 / span 3;
     position: initial;
