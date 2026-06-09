@@ -113,6 +113,10 @@ ul li a:link {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+}
+
 #discover {
   background-color: var(--primary-color);
   margin: 10px;
