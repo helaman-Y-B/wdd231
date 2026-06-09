@@ -1,0 +1,140 @@
+:root {
+  --background-color: #f1f7ee;
+  --primary-color: #3a503b;
+  --secondary-color: #b0bea9;
+  --tertiary-color: #97b485;
+  --quaternary-color: #2c6d83;
+  --header-font: "rubik", Arial, Helvetica, sans-serif;
+  --text-font: "inter", Georgia, Times, serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--header-font);
+}
+
+p {
+  font-family: var(--text-font);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 0fr 1fr 0fr;
+  grid-template-rows: 0fr 0fr;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: 20px;
+}
+
+header img {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100px;
+}
+
+header span {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: var(--header-font);
+  display: block;
+  padding: 25px;
+}
+
+header p {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 25px;
+  margin: 0px;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease-in-out 0.5s;
+}
+
+header p.open-btn {
+  transform: rotate(90deg);
+}
+
+nav.open {
+  transform: translateX(0);
+  /* Return to original position */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  background-color: var(--tertiary-color);
+  font-family: var(--text-font);
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: min-content;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  /* Looks like this prevents users from clicking links while they are hidden */
+  transition:
+    opacity 0.5s ease-in-out 0.3s,
+    transform 0.3s ease-in-out 0.5s;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  color: black;
+  display: inline-block;
+  width: 90%;
+  padding: 15px;
+}
+
+ul li:hover {
+  background-color: var(--secondary-color);
+}
+
+ul li a:link {
+  text-decoration: none;
+}
+
+#selected a:link {
+  text-decoration: dotted underline 4px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 25px;
+  text-align: center;
+}
+
+footer img {
+  max-width: 40px;
+}
+
+#media {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
