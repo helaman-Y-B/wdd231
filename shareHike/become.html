@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Hike Home</title>
+    <meta name="author" content="Helamã Y. Barbour">
+    <meta name="description"
+        content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
+    <meta property="og:title" content="Share Hike Home">
+    <meta property="og:description"
+        content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/shareHike/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/hikes.css">
+    <script src="scripts/common-scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="Share Hike Icon image">
+        <span>Share Hike</span>
+        <p id="open-nav-btn" class="close-btn">🢁</p>
+        <nav class="close">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hikes.html">The Hikes</a></li>
+                <li id="selected"><a href="become.html">Become a Hiker</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Become one of us!</h1>
+        <form action="thankyou.hmlt">
+            <fieldset>
+                <legend>Your infomration</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname">
+                <label for="contact">Phone Number:</label>
+                <input type="tel" name="contact" id="contact" placeholder="DDD 0000000">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="something@gmail.com">
+            </fieldset>
+            <fieldset>
+                <legend>Desired membership</legend>
+                <div>
+                    <label for="free">Free membership</label>
+                    <input type="radio" name="membership" id="free">
+                </div>
+                <dialog id="free-modal">
+                    <div>
+                        <h2>The Benefits of a Free Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+
+                    <ul>
+                        <li>Access to basic features and content</li>
+                        <li>Monthly newsletter updates</li>
+                        <li>Community forum access</li>
+                    </ul>
+                </dialog>
+                <div>
+                    <label for="bronze">Bronze</label>
+                    <input type="radio" name="membership" id="bronze">
+                </div>
+                <dialog id="bronze-modal">
+                    <div>
+                        <h2>The Benefits of a Bronze Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+
+                    <ul>
+                        <li>Access to basic features and content</li>
+                        <li>Monthly newsletter updates</li>
+                        <li>Community forum access</li>
+                    </ul>
+                </dialog>
+
+                <div>
+                    <label for="silver">Silver</label>
+                    <input type="radio" name="membership" id="silver">
+                </div>
+                <dialog id="silver-modal">
+                    <div>
+                        <h2>The Benefits of a Silver Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+
+                    <ul>
+                        <li>All Bronze benefits included</li>
+                        <li>Access to exclusive articles and resources</li>
+                        <li>Priority email support</li>
+                        <li>Early access to new features</li>
+                        <li>Participation in member-only events</li>
+                    </ul>
+                </dialog>
+
+                <div>
+                    <label for="gold">Gold</label>
+                    <input type="radio" name="membership" id="gold">
+                </div>
+                <dialog id="gold-modal">
+                    <div>
+                        <h2>The Benefits of a Gold Membership</h2>
+                        <button type="button" class="close-modal">X</button>
+                    </div>
+                    <ul>
+                        <li>All Silver benefits included</li>
+                        <li>Personalized recommendations</li>
+                        <li>Access to premium content and tools</li>
+                        <li>Live webinars and training sessions</li>
+                        <li>Priority customer support (faster response time)</li>
+                        <li>Discounts on partner services</li>
+                    </ul>
+                </dialog>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
+        <div id="media">
+            <img src="images/facebook-f-brands-solid-full-small.webp" alt="Facebook icon">
+            <img src="images/x-twitter-brands-solid-full-small.webp" alt="X icon">
+            <img src="images/instagram-brands-solid-full-small.webp" alt="Instagram icon">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
