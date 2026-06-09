@@ -1,0 +1,68 @@
+:root {
+  --background-color: #f1f7ee;
+  --primary-color: #3a503b;
+  --secondary-color: #b0bea9;
+  --tertiary-color: #97b485;
+  --quaternary-color: #2c6d83;
+  --header-font: "rubik", Arial, Helvetica, sans-serif;
+  --text-font: "inter", Georgia, Times, serif;
+}
+
+h2,
+h3 {
+  margin: 0px;
+  padding: 0.83em 0px;
+  background-color: var(--tertiary-color);
+  text-align: center;
+}
+
+#hikes {
+  background-color: var(--secondary-color);
+  max-width: 90%;
+  border: 5px inset var(--quaternary-color);
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.hike h2 {
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0.83em 0px;
+  background-color: var(--tertiary-color);
+  text-align: center;
+}
+
+.hike img {
+  display: block;
+  max-width: 90%;
+  border: 5px inset var(--quaternary-color);
+  border-radius: 5px;
+  margin: 15px auto;
+}
+
+.hike ul {
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hike ul li {
+  list-style: none;
+}
+
+.hike button {
+  font-family: var(--header-font);
+  background-color: var(--quaternary-color);
+  color: var(--background-color);
+  padding: 5px;
+  margin: 0.83em 0.83em;
+  border-color: var(--primary-color);
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.hike button:target-current {
+  background-color: var(--primary-color);
+}

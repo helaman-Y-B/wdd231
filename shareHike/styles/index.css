@@ -8,14 +8,6 @@
   --text-font: "inter", Georgia, Times, serif;
 }
 
-main {
-  padding-top: 100px;
-}
-
-main h1 {
-  text-align: center;
-}
-
 main picture {
   font-family: var(--text-font);
   width: 100%;
@@ -24,25 +16,4 @@ main picture {
 
 main picture img {
   width: 100%;
-}
-
-section {
-  margin: 15px;
-  border: 5px inset var(--quaternary-color);
-  border-radius: 5px;
-}
-
-section h2 {
-  margin: 0px;
-  padding: 0.83em 0px;
-  background-color: var(--tertiary-color);
-  text-align: center;
-}
-
-section p {
-  padding: 0.83em 0.83em;
-  margin: 0px;
-  text-align: center;
-  line-height: 1.5;
-  background-color: var(--secondary-color);
 }
