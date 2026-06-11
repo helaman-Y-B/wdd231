@@ -44,6 +44,10 @@ input {
     font-family: var(--text-font);
 }
 
+form input {
+    padding: 3px;
+}
+
 input[type="radio"] {
     width: 20px;
     height: 20px;
