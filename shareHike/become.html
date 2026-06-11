@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles/become.css">
     <link rel="stylesheet" href="styles/hikes.css">
     <script src="scripts/common-scripts.js" defer></script>
+    <script type="module" src="scripts/controller-become.mjs"></script>
 </head>
 
 <body>
@@ -44,14 +45,18 @@
         <form action="thankyou.hmlt">
             <fieldset>
                 <legend>Your infomration</legend>
+                
                 <label for="fname">First Name:</label>
                 <input type="text" name="fname" id="fname">
+
                 <label for="lname">Last Name:</label>
                 <input type="text" name="lname" id="lname">
+
                 <label for="contact">Phone Number:</label>
                 <input type="tel" name="contact" id="contact" placeholder="DDD 0000000">
+
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="something@gmail.com">
+                <input type="email" id="email" name="email" placeholder="something@gmail.com" autocomplete="email">
             </fieldset>
             <fieldset>
                 <legend>Desired membership</legend>
@@ -67,7 +72,6 @@
 
                     <ul>
                         <li>Access to basic features and content</li>
-                        <li>Monthly newsletter updates</li>
                         <li>Community forum access</li>
                     </ul>
                 </dialog>
@@ -82,9 +86,8 @@
                     </div>
 
                     <ul>
-                        <li>Access to basic features and content</li>
+                        <li>All free benefits included</li>
                         <li>Monthly newsletter updates</li>
-                        <li>Community forum access</li>
                     </ul>
                 </dialog>
 
@@ -120,7 +123,6 @@
                         <li>All Silver benefits included</li>
                         <li>Personalized recommendations</li>
                         <li>Access to premium content and tools</li>
-                        <li>Live webinars and training sessions</li>
                         <li>Priority customer support (faster response time)</li>
                         <li>Discounts on partner services</li>
                     </ul>
