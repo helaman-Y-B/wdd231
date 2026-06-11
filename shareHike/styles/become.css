@@ -1,11 +1,11 @@
 :root {
-  --background-color: #f1f7ee;
-  --primary-color: #3a503b;
-  --secondary-color: #b0bea9;
-  --tertiary-color: #97b485;
-  --quaternary-color: #2c6d83;
-  --header-font: "rubik", Arial, Helvetica, sans-serif;
-  --text-font: "inter", Georgia, Times, serif;
+    --background-color: #f1f7ee;
+    --primary-color: #3a503b;
+    --secondary-color: #b0bea9;
+    --tertiary-color: #97b485;
+    --quaternary-color: #2c6d83;
+    --header-font: "rubik", Arial, Helvetica, sans-serif;
+    --text-font: "inter", Georgia, Times, serif;
 }
 
 form {
@@ -28,13 +28,25 @@ form fieldset {
     border: 3px outset var(--primary-color);
 }
 
+form fieldset div {
+    display: flex;
+    gap: 20px;
+}
+
 form legend {
+    text-align: center;
     font-family: var(--header-font);
     font-size: 25px;
 }
 
-form label, input {
+form label,
+input {
     font-family: var(--text-font);
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
 }
 
 dialog {
