@@ -1,0 +1,32 @@
+{
+    "hikes": [
+        {
+            "user-name": "user",
+            "name": "Name",
+            "location": "Location",
+            "category": [
+                "Water",
+                "Mountain",
+                "waterfall"
+            ],
+            "title": "title",
+            "description": "Description",
+            "rating": "⭐⭐⭐",
+            "img-path": "images"
+        },
+        {
+            "user-name": "user",
+            "name": "Name",
+            "location": "Location",
+            "category": [
+                "Water",
+                "Mountain",
+                "waterfall"
+            ],
+            "title": "title",
+            "description": "Description",
+            "rating": "⭐⭐⭐",
+            "img-path": "images"
+        }
+    ]
+}
