@@ -18,8 +18,72 @@ main picture img {
   width: 100%;
 }
 /*All images should be 400px wide*/
+
+#highlights {
+  border: none;
+}
+
 #highlights img {
   width: 100%;
   margin: auto;
   display: block;
 }
+
+.hike {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  border: 5px inset var(--quaternary-color);
+  border-radius: 10px;
+}
+
+.hike h2 {
+  border-radius: 5px;
+}
+
+.hike h3 {
+  background-color: var(--tertiary-color);
+  margin: 0px;
+  padding: 1.17em;
+}
+
+#rating {
+  background-color: var(--quaternary-color);
+}
+
+.category {
+  display: block;
+  background-color: var(--background-color);
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid var(--quaternary-color);
+  border-radius: 10px;
+}
+
+.category h4 {
+  margin: 0px;
+  padding: 1em 0px;
+  font-size: 20px;
+  font-family: var(--header-font);
+}
+
+.category ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-family: var(--text-font);
+}
+
+.category ul li {
+  list-style: none;
+  padding: 10px;
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: auto;
+}
+
+/*albert - Arthur - Barbas - Devin*/

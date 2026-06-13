@@ -1,7 +1,7 @@
 {
     "hikes": [
         {
-            "user-name": "nature_lover94",
+            "user": "nature_lover94",
             "name": "Pico Paraná Trail",
             "location": "Paraná, Brazil",
             "category": [
@@ -11,10 +11,10 @@
             "title": "Challenging but rewarding summit!",
             "description": "An intense hike to the highest peak in Southern Brazil. The views above the clouds are absolutely unforgettable, but it requires good physical preparation.",
             "rating": "⭐⭐⭐⭐⭐",
-            "img-path": "images/pico_parana.jpg"
+            "img": "images/pico_parana.webp"
         },
         {
-            "user-name": "wanderlust_clara",
+            "user": "wanderlust_clara",
             "name": "Salto São Francisco",
             "location": "Guarapuava, Paraná",
             "category": [
@@ -25,10 +25,10 @@
             "title": "Breathtakingly massive waterfall",
             "description": "The trail leads to an incredible lookout point of one of the largest waterfalls in the region. The mist from the falls feels amazing after the walk.",
             "rating": "⭐⭐⭐⭐⭐",
-            "img-path": "images/salto_sao_francisco.jpg"
+            "img": "images/salto_sao_francisco.webp"
         },
         {
-            "user-name": "trail_blazer",
+            "user": "trail_blazer",
             "name": "Canyon Guartelá Path",
             "location": "Tibagi, Paraná",
             "category": [
@@ -38,10 +38,10 @@
             "title": "Stunning canyon vistas",
             "description": "An easy-to-moderate trail offering expansive views of the world's sixth-longest canyon. The rock formations and native vegetation are fascinating.",
             "rating": "⭐⭐⭐⭐",
-            "img-path": "images/guartela_canyon.jpg"
+            "img": "images/guartela_canyon.webp"
         },
         {
-            "user-name": "lucas_adventures",
+            "user": "lucas_adventures",
             "name": "Morro do Canal",
             "location": "Piraquara, Paraná",
             "category": [
@@ -50,10 +50,10 @@
             "title": "Perfect quick weekend hike",
             "description": "A shorter, steep climb with iron ladders near the top. Great panoramic views of the coastal mountains and Curitiba on a clear day.",
             "rating": "⭐⭐⭐⭐",
-            "img-path": "images/morro_do_canal.jpg"
+            "img": "images/morro_do_canal.webp"
         },
         {
-            "user-name": "eco_explorer",
+            "user": "eco_explorer",
             "name": "Salto dos Macacos",
             "location": "Morretes, Paraná",
             "category": [
@@ -64,23 +64,23 @@
             "title": "A tough trek to paradise",
             "description": "Following old train tracks and dense Atlantic forest trails leads to a gorgeous natural pool at the base of two massive waterfalls. Perfect for a swim.",
             "rating": "⭐⭐⭐⭐⭐",
-            "img-path": "images/salto_macacos.jpg"
+            "img": "images/salto_macacos.webp"
         },
         {
-            "user-name": "fernanda_m",
+            "user": "disappointed_hiker",
             "name": "Caminho do Itupava",
             "location": "Quatro Barras to Morretes, Paraná",
             "category": [
                 "Forest",
                 "History"
             ],
-            "title": "Walking through history",
-            "description": "A historic stone-paved trail through the rainforest dating back to the colonial era. It can get very slippery, but the immersion in nature is total.",
-            "rating": "⭐⭐⭐⭐",
-            "img-path": "images/itupava_trail.jpg"
+            "title": "Way too dangerous and poorly maintained",
+            "description": "The historic stones are completely covered in slick moss and multiple sections of the trail are washed out. Skip this until repairs are done.",
+            "rating": "⭐",
+            "img": "images/itupava_trail.webp"
         },
         {
-            "user-name": "peak_seeker",
+            "user": "peak_seeker",
             "name": "Morro Araçatuba",
             "location": "Tijucas do Sul, Paraná",
             "category": [
@@ -89,10 +89,10 @@
             "title": "Beautiful fields and windy peaks",
             "description": "A steady climb through open mountain grasslands. The summit offers a 360-degree view of the surrounding valleys and can get incredibly windy.",
             "rating": "⭐⭐⭐⭐",
-            "img-path": "images/aracatuba.jpg"
+            "img": "images/aracatuba.webp"
         },
         {
-            "user-name": "water_drop",
+            "user": "water_drop",
             "name": "Buraco do Padre",
             "location": "Ponta Grossa, Paraná",
             "category": [
@@ -103,10 +103,10 @@
             "title": "A hidden waterfall inside a cave!",
             "description": "An extremely accessible and easy walk through a gorge leading inside a giant vertical cave where a waterfall cascades down. Magical place.",
             "rating": "⭐⭐⭐⭐⭐",
-            "img-path": "images/buraco_padre.jpg"
+            "img": "images/buraco_padre.webp"
         },
         {
-            "user-name": "green_hiker",
+            "user": "green_hiker",
             "name": "Recanto dos Papagaios Trail",
             "location": "Palmeira, Paraná",
             "category": [
@@ -116,10 +116,10 @@
             "title": "Relaxing riverside walk",
             "description": "A peaceful trail running alongside the river. Great for families and those looking for a light stroll surrounded by beautiful pine trees.",
             "rating": "⭐⭐⭐",
-            "img-path": "images/recanto_papagaios.jpg"
+            "img": "images/recanto_papagaios.webp"
         },
         {
-            "user-name": "skyline_chaser",
+            "user": "skyline_chaser",
             "name": "Pico Caratuva Trail",
             "location": "Campina Grande do Sul, Paraná",
             "category": [
@@ -129,23 +129,23 @@
             "title": "Tough climb, incredible landscape",
             "description": "The second highest peak in the south. The trail is steep and muddy through the forest, but opening up to the peak gives a stunning view of Pico Paraná.",
             "rating": "⭐⭐⭐⭐⭐",
-            "img-path": "images/caratuva_peak.jpg"
+            "img": "images/caratuva_peak.webp"
         },
         {
-            "user-name": "river_runner",
+            "user": "crowd_hater",
             "name": "Salto Pito Trail",
             "location": "Prudentópolis, Paraná",
             "category": [
                 "Water",
                 "Waterfall"
             ],
-            "title": "The land of giant waterfalls",
-            "description": "A short but rugged trail to see one of Prudentópolis's many majestic falls. The sheer volume and sound of the water are powerful.",
-            "rating": "⭐⭐⭐⭐",
-            "img-path": "images/salto_pito.jpg"
+            "title": "Nice falls, but completely overcrowded",
+            "description": "The waterfall itself is massive, but the trail is packed shoulder-to-shoulder on weekends and littered with plastic wrappers. Left disappointed.",
+            "rating": "⭐⭐",
+            "img": "images/salto_pito.webp"
         },
         {
-            "user-name": "misty_woods",
+            "user": "misty_woods",
             "name": "Anhangava Mountain",
             "location": "Quatro Barras, Paraná",
             "category": [
@@ -154,10 +154,10 @@
             "title": "The cradle of local climbing",
             "description": "Very popular trail for hiking and rock climbing. A relatively quick ascent with some rocky scrambles near the top. Great for watching the sunrise.",
             "rating": "⭐⭐⭐⭐",
-            "img-path": "images/anhangava.jpg"
+            "img": "images/anhangava.webp"
         },
         {
-            "user-name": "aqua_trek",
+            "user": "aqua_trek",
             "name": "Salto São João",
             "location": "Prudentópolis, Paraná",
             "category": [
@@ -168,33 +168,33 @@
             "title": "A stunning drop in the forest",
             "description": "The trail takes you to an observation deck looking directly at a massive 84-meter high waterfall surrounded by lush green canyon walls.",
             "rating": "⭐⭐⭐⭐⭐",
-            "img-path": "images/salto_sao_joao.jpg"
+            "img": "images/salto_sao_joao.webp"
         },
         {
-            "user-name": "flora_fanatic",
+            "user": "lost_in_woods",
             "name": "Morro do Marumbi (Olimpo)",
             "location": "Morretes, Paraná",
             "category": [
                 "Mountain",
                 "Forest"
             ],
-            "title": "The ultimate mountaineering challenge",
-            "description": "Extremely steep, technical hike requiring the use of fixed chains and ladders on exposed rock faces. Only for experienced hikers, but legendary views.",
-            "rating": "⭐⭐⭐⭐⭐",
-            "img-path": "images/marumbi_olimpo.jpg"
+            "title": "Completely missing trail markers",
+            "description": "Attempted this trail but had to turn around because the path is overgrown and the markers are missing. Extremely easy to get lost.",
+            "rating": "⭐",
+            "img": "images/marumbi_olimpo.webp"
         },
         {
-            "user-name": "casual_stroller",
+            "user": "bored_traveler",
             "name": "Parque Das Monções Trail",
             "location": "Porto Feliz, São Paulo",
             "category": [
                 "Water",
                 "History"
             ],
-            "title": "Easy river path with great history",
-            "description": "A historic pathway along the Tietê River bank featuring interesting caves and rock formations where early explorers used to depart.",
-            "rating": "⭐⭐⭐",
-            "img-path": "images/moncoes_park.jpg"
+            "title": "Underwhelming and full of mosquitoes",
+            "description": "The historical context is neat, but the trail itself is very short, uninspired, and right next to heavily polluted river water. Bring heavy bug spray.",
+            "rating": "⭐⭐",
+            "img": "images/moncoes_park.webp"
         }
     ]
-} 
+}
