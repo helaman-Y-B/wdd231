@@ -32,15 +32,18 @@ main section h2 {
   padding: 15px;
 }
 
+#filters h3 {
+  grid-column: 1 / span 2;
+}
+
 #filters button {
-  grid-row: 1;
+  grid-row: 2;
   font-family: var(--header-font);
-  font-family: 20px;
   padding: 10px;
 }
 
 #filterCategory {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 1 / span 2;
   display: flex;
   flex-direction: column;
@@ -64,6 +67,26 @@ main section h2 {
 
 #hikes {
   border: none;
+}
+
+#hikes {
+  margin: auto;
+  border-radius: 5px;
+  width: 95%;
+}
+
+#hikes h2 {
+  margin: 0px;
+  padding: 0.83em 0px;
+  background-color: var(--tertiary-color);
+  text-align: center;
+}
+
+#hikes p {
+  padding: 0.83em 0.83em;
+  margin: 0px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .hike img {
@@ -136,8 +159,4 @@ main section h2 {
   border-color: var(--primary-color);
   border-radius: 10px;
   border-style: outset;
-}
-
-.hike button:target-current {
-  background-color: var(--primary-color);
 }

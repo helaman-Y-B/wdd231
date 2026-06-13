@@ -100,7 +100,3 @@ main picture img {
   border-radius: 10px;
   border-style: outset;
 }
-
-.hike button:target-current {
-  background-color: var(--primary-color);
-}
