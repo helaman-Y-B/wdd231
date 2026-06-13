@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/hikes.css">
     <script src="scripts/common-scripts.js" defer></script>
+    <script type="module" src="scripts/controller-hikes.mjs"></script>
 </head>
 
 <body>
@@ -41,24 +42,18 @@
     <main>
         <h1>Which hike has your image?</h1>
         <section>
-            <h2>Choosing the perfect hike is not easy...</h2>
+            <h2>Choosing the perfect hike <br> is not easy...</h2>
             <p>But here, you will be able to find one that screams your name. <br><br>
                 Here is a list of hikes that people shared close to your location and shared their experiences
                 visiting them. With this list it's imposible to not find the perfect hike for you!</p>
         </section>
-        <div id="hikes">
-            <h2>Check out the Hikes!</h2>
-            <div class="hike">
-                <h3 class="hike-name">Hike name</h3>
-                <img src="images/mautain-hike400.webp" alt="The hike img">
-                <ul class="info">
-                    <li>Rating:</li>
-                    <li>Location:</li>
-                    <li>Contact:</li>
-                </ul>
-                <button>Learn More!</button>
-            </div>
-        </div>
+        <h2>Find your next Hike!</h2>
+        <section id="filters">
+            <button>High to Low</button>
+            <button>Low to High</button>
+        </section>
+        <section id="hikes"></section>
+
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>

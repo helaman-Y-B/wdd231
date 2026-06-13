@@ -16,7 +16,7 @@ async function getData() {
     
 }
 
-export default async function displayHighlights() {
+export async function displayHighlights() {
     try {
         let html = "";
         const section = document.querySelector("#highlights")
@@ -55,5 +55,47 @@ export default async function displayHighlights() {
 
     } catch(error) {
         console.log(`Failed to display Hightlights: ${error}`);
+    }
+}
+
+export async function displayHikes() {
+    try {
+        let html = "";
+        const section = document.querySelector("#hikes")
+        const data = await getData();
+
+        data.forEach(hike => {
+            
+            html += `
+                <div class="hike">
+                    <h2>By ${hike.user}</h2>
+
+                    <img src="${hike.img}"
+                        alt="${hike.name}" loading="lazy">
+
+                    <p id="rating">${hike.rating}</p>
+                    
+                    <h3>${hike.title}</h3>
+
+                    <p>${hike.description}</p>
+
+                    <p>Location: ${hike.location}</p>
+                    <div class="category">
+                        <h4>Categories</h4>
+                        <ul class="categories">
+                            <li>Mountain</li>
+                            <li>Waterfall</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        
+            
+        });
+
+        section.innerHTML = html;
+
+    } catch(error) {
+        console.log(`Failed to display Hikes: ${error}`);
     }
 }

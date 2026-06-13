@@ -16,21 +16,29 @@ h3 {
   text-align: center;
 }
 
-#hikes {
-  background-color: var(--secondary-color);
-  max-width: 90%;
-  border: 5px inset var(--quaternary-color);
-  border-radius: 5px;
-  margin: auto;
-  margin-bottom: 15px;
+main h2 {
+  background-color: var(--background-color);
 }
 
-.hike h2 {
-  margin: 0px;
-  margin-bottom: 20px;
-  padding: 0.83em 0px;
+main section h2 {
   background-color: var(--tertiary-color);
-  text-align: center;
+}
+
+#filters {
+  background-color: var(--secondary-color);
+  display: flex;
+  padding: 15px;
+}
+
+#filters button {
+  margin: auto;
+  font-family: var(--header-font);
+  font-family: 20px;
+  padding: 10px;
+}
+
+#hikes {
+  border: none;
 }
 
 .hike img {
@@ -41,15 +49,60 @@ h3 {
   margin: 15px auto;
 }
 
-.hike ul {
-  font-family: var(--text-font);
+.hike {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  border: 5px inset var(--quaternary-color);
+  border-radius: 10px;
 }
 
-.hike ul li {
+.hike h2 {
+}
+
+.hike h3 {
+  background-color: var(--tertiary-color);
+  margin: 0px;
+  padding: 1.17em;
+}
+
+#rating {
+  background-color: var(--quaternary-color);
+}
+
+.category {
+  display: block;
+  background-color: var(--background-color);
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid var(--quaternary-color);
+  border-radius: 10px;
+}
+
+.category h4 {
+  margin: 0px;
+  padding: 1em 0px;
+  font-size: 20px;
+  font-family: var(--header-font);
+}
+
+.category ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-family: var(--text-font);
+}
+
+.category ul li {
   list-style: none;
+  padding: 10px;
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: auto;
 }
 
 .hike button {

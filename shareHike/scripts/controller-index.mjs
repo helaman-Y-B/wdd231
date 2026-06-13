@@ -1,3 +1,3 @@
-import displayHighlights from "./show-highlights.mjs";
+import { displayHighlights } from "./show-hikes.mjs";
 
 displayHighlights();
