@@ -26,7 +26,7 @@ export default async function displayHighlights() {
             if(hike.rating === "⭐⭐⭐⭐⭐") {
                 html += `
                     <div class="hike">
-                        <h2>${hike.user}</h2>
+                        <h2>By ${hike.user}</h2>
 
                         <img src="${hike.img}"
                             alt="${hike.name}" loading="lazy">
