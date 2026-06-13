@@ -17,3 +17,9 @@ main picture {
 main picture img {
   width: 100%;
 }
+/*All images should be 400px wide*/
+#highlights img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
