@@ -84,9 +84,6 @@ main section h2 {
   border-radius: 10px;
 }
 
-.hike h2 {
-}
-
 .hike h3 {
   background-color: var(--tertiary-color);
   margin: 0px;

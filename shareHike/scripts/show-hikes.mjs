@@ -19,6 +19,9 @@ async function getData() {
 export async function displayHighlights() {
     try {
         let html = "";
+
+        html += `<h2>The biggest rating!</h2>`
+        
         const section = document.querySelector("#highlights")
         const data = await getData();
 

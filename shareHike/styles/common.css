@@ -82,11 +82,11 @@ nav {
   height: min-content;
   transform: translateX(100%);
   opacity: 0;
-  pointer-events: none;
   /* Looks like this prevents users from clicking links while they are hidden */
   transition:
     opacity 0.5s ease-in-out 0.3s,
-    transform 0.3s ease-in-out 0.5s;
+    transform 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 header nav ul {
