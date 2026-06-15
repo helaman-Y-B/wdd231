@@ -8,18 +8,24 @@
   --text-font: "inter", Georgia, Times, serif;
 }
 
+main {
+  max-width: 600px;
+  height: max-content;
+  margin: auto;
+}
+
 section {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 section a {
-    font-family: var(--text-font);
-    font-size: 20px;
-    text-align: center;
-    margin: 10px auto;
-    display: block;
+  font-family: var(--text-font);
+  font-size: 20px;
+  text-align: center;
+  margin: 10px auto;
+  display: block;
 }
 
 section a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }

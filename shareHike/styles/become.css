@@ -9,23 +9,27 @@
 }
 
 main {
-  max-width: 600px;
-  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 form {
+  width: 100%;
+  box-sizing: border-box;
   background-color: var(--secondary-color);
-  margin: 10px auto;
+  margin: 10px 0;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 80%;
   border-radius: 15px;
   border: 5px inset var(--quaternary-color);
 }
 
 form fieldset {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -36,6 +40,7 @@ form fieldset {
 .membership {
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 
 form legend {
@@ -50,6 +55,8 @@ input {
 }
 
 form input {
+  width: 100%;
+  box-sizing: border-box;
   padding: 3px;
 }
 
