@@ -66,7 +66,7 @@ header p {
   padding: 25px;
   margin: 0px;
   transform: rotate(-90deg);
-  transition: transform 0.3s ease-in-out 0.5s;
+  transition: transform 0.3s ease-in-out;
 }
 
 header p.open-btn {
@@ -76,7 +76,6 @@ header p.open-btn {
 nav.open {
   transform: translateX(0);
   /* Return to original position */
-  opacity: 1;
   pointer-events: auto;
 }
 
@@ -92,11 +91,8 @@ nav {
   width: 100%;
   height: min-content;
   transform: translateX(100%);
-  opacity: 0;
   /* Looks like this prevents users from clicking links while they are hidden */
-  transition:
-    opacity 0.5s ease-in-out 0.3s,
-    transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   pointer-events: none;
 }
 
