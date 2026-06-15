@@ -1,32 +1,200 @@
 {
     "hikes": [
         {
-            "user-name": "user",
-            "name": "Name",
-            "location": "Location",
+            "user": "nature_lover94",
+            "name": "Pico Paraná Trail",
+            "location": "Paraná, Brazil",
             "category": [
-                "Water",
                 "Mountain",
-                "waterfall"
+                "Forest"
             ],
-            "title": "title",
-            "description": "Description",
-            "rating": "⭐⭐⭐",
-            "img-path": "images"
+            "title": "Challenging but rewarding summit!",
+            "description": "An intense hike to the highest peak in Southern Brazil. The views above the clouds are absolutely unforgettable, but it requires good physical preparation.",
+            "rating": "⭐⭐⭐⭐⭐",
+            "img": "images/pico_parana.webp"
         },
         {
-            "user-name": "user",
-            "name": "Name",
-            "location": "Location",
+            "user": "wanderlust_clara",
+            "name": "Salto São Francisco",
+            "location": "Guarapuava, Paraná",
             "category": [
                 "Water",
-                "Mountain",
-                "waterfall"
+                "Waterfall",
+                "Forest"
             ],
-            "title": "title",
-            "description": "Description",
+            "title": "Breathtakingly massive waterfall",
+            "description": "The trail leads to an incredible lookout point of one of the largest waterfalls in the region. The mist from the falls feels amazing after the walk.",
+            "rating": "⭐⭐⭐⭐⭐",
+            "img": "images/salto_sao_francisco.webp"
+        },
+        {
+            "user": "trail_blazer",
+            "name": "Canyon Guartelá Path",
+            "location": "Tibagi, Paraná",
+            "category": [
+                "Mountain",
+                "Canyon"
+            ],
+            "title": "Stunning canyon vistas",
+            "description": "An easy-to-moderate trail offering expansive views of the world's sixth-longest canyon. The rock formations and native vegetation are fascinating.",
+            "rating": "⭐⭐⭐⭐",
+            "img": "images/guartela_canyon.webp"
+        },
+        {
+            "user": "lucas_adventures",
+            "name": "Morro do Canal",
+            "location": "Piraquara, Paraná",
+            "category": [
+                "Mountain"
+            ],
+            "title": "Perfect quick weekend hike",
+            "description": "A shorter, steep climb with iron ladders near the top. Great panoramic views of the coastal mountains and Curitiba on a clear day.",
+            "rating": "⭐⭐⭐⭐",
+            "img": "images/morro_do_canal.webp"
+        },
+        {
+            "user": "eco_explorer",
+            "name": "Salto dos Macacos",
+            "location": "Morretes, Paraná",
+            "category": [
+                "Water",
+                "Waterfall",
+                "Forest"
+            ],
+            "title": "A tough trek to paradise",
+            "description": "Following old train tracks and dense Atlantic forest trails leads to a gorgeous natural pool at the base of two massive waterfalls. Perfect for a swim.",
+            "rating": "⭐⭐⭐⭐⭐",
+            "img": "images/salto_macacos.webp"
+        },
+        {
+            "user": "disappointed_hiker",
+            "name": "Caminho do Itupava",
+            "location": "Quatro Barras to Morretes, Paraná",
+            "category": [
+                "Forest",
+                "History"
+            ],
+            "title": "Way too dangerous and poorly maintained",
+            "description": "The historic stones are completely covered in slick moss and multiple sections of the trail are washed out. Skip this until repairs are done.",
+            "rating": "⭐",
+            "img": "images/itupava_trail.webp"
+        },
+        {
+            "user": "peak_seeker",
+            "name": "Morro Araçatuba",
+            "location": "Tijucas do Sul, Paraná",
+            "category": [
+                "Mountain"
+            ],
+            "title": "Beautiful fields and windy peaks",
+            "description": "A steady climb through open mountain grasslands. The summit offers a 360-degree view of the surrounding valleys and can get incredibly windy.",
+            "rating": "⭐⭐⭐⭐",
+            "img": "images/aracatuba.webp"
+        },
+        {
+            "user": "water_drop",
+            "name": "Buraco do Padre",
+            "location": "Ponta Grossa, Paraná",
+            "category": [
+                "Water",
+                "Waterfall",
+                "Cave"
+            ],
+            "title": "A hidden waterfall inside a cave!",
+            "description": "An extremely accessible and easy walk through a gorge leading inside a giant vertical cave where a waterfall cascades down. Magical place.",
+            "rating": "⭐⭐⭐⭐⭐",
+            "img": "images/buraco_padre.webp"
+        },
+        {
+            "user": "green_hiker",
+            "name": "Recanto dos Papagaios Trail",
+            "location": "Palmeira, Paraná",
+            "category": [
+                "Water",
+                "Forest"
+            ],
+            "title": "Relaxing riverside walk",
+            "description": "A peaceful trail running alongside the river. Great for families and those looking for a light stroll surrounded by beautiful pine trees.",
             "rating": "⭐⭐⭐",
-            "img-path": "images"
+            "img": "images/recanto_papagaios.webp"
+        },
+        {
+            "user": "skyline_chaser",
+            "name": "Pico Caratuva Trail",
+            "location": "Campina Grande do Sul, Paraná",
+            "category": [
+                "Mountain",
+                "Forest"
+            ],
+            "title": "Tough climb, incredible landscape",
+            "description": "The second highest peak in the south. The trail is steep and muddy through the forest, but opening up to the peak gives a stunning view of Pico Paraná.",
+            "rating": "⭐⭐⭐⭐⭐",
+            "img": "images/caratuva_peak.webp"
+        },
+        {
+            "user": "crowd_hater",
+            "name": "Salto Pito Trail",
+            "location": "Prudentópolis, Paraná",
+            "category": [
+                "Water",
+                "Waterfall"
+            ],
+            "title": "Nice falls, but completely overcrowded",
+            "description": "The waterfall itself is massive, but the trail is packed shoulder-to-shoulder on weekends and littered with plastic wrappers. Left disappointed.",
+            "rating": "⭐⭐",
+            "img": "images/salto_pito.webp"
+        },
+        {
+            "user": "misty_woods",
+            "name": "Anhangava Mountain",
+            "location": "Quatro Barras, Paraná",
+            "category": [
+                "Mountain"
+            ],
+            "title": "The cradle of local climbing",
+            "description": "Very popular trail for hiking and rock climbing. A relatively quick ascent with some rocky scrambles near the top. Great for watching the sunrise.",
+            "rating": "⭐⭐⭐⭐",
+            "img": "images/anhangava.webp"
+        },
+        {
+            "user": "aqua_trek",
+            "name": "Salto São João",
+            "location": "Prudentópolis, Paraná",
+            "category": [
+                "Water",
+                "Waterfall",
+                "Forest"
+            ],
+            "title": "A stunning drop in the forest",
+            "description": "The trail takes you to an observation deck looking directly at a massive 84-meter high waterfall surrounded by lush green canyon walls.",
+            "rating": "⭐⭐⭐⭐⭐",
+            "img": "images/salto_sao_joao.webp"
+        },
+        {
+            "user": "lost_in_woods",
+            "name": "Morro do Marumbi (Olimpo)",
+            "location": "Morretes, Paraná",
+            "category": [
+                "Mountain",
+                "Forest"
+            ],
+            "title": "Completely missing trail markers",
+            "description": "Attempted this trail but had to turn around because the path is overgrown and the markers are missing. Extremely easy to get lost.",
+            "rating": "⭐",
+            "img": "images/marumbi_olimpo.webp"
+        },
+        {
+            "user": "bored_traveler",
+            "name": "Parque Das Monções Trail",
+            "location": "Porto Feliz, São Paulo",
+            "category": [
+                "Water",
+                "History"
+            ],
+            "title": "Underwhelming and full of mosquitoes",
+            "description": "The historical context is neat, but the trail itself is very short, uninspired, and right next to heavily polluted river water. Bring heavy bug spray.",
+            "rating": "⭐⭐",
+            "img": "images/moncoes_park.webp"
         }
     ]
 }

@@ -1,0 +1,43 @@
+@media screen and (min-width: 550px) {
+  #highlights > h2:first-child {
+    grid-column: 1 / -1;
+  }
+
+  #highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: start;
+  }
+
+  .hike {
+    width: fit-content;
+    max-width: none;
+    height: 99%;
+    margin: 0;
+  }
+
+  .category ul li {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #highlights {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .hike {
+    width: fit-content;
+    max-width: none;
+    height: 99%;
+    margin: 0;
+  }
+}

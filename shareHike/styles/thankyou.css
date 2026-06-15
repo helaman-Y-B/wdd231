@@ -1,25 +1,21 @@
-:root {
-  --background-color: #f1f7ee;
-  --primary-color: #3a503b;
-  --secondary-color: #b0bea9;
-  --tertiary-color: #97b485;
-  --quaternary-color: #2c6d83;
-  --header-font: "rubik", Arial, Helvetica, sans-serif;
-  --text-font: "inter", Georgia, Times, serif;
+main {
+  max-width: 600px;
+  height: max-content;
+  margin: auto;
 }
 
 section {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 section a {
-    font-family: var(--text-font);
-    font-size: 20px;
-    text-align: center;
-    margin: 10px auto;
-    display: block;
+  font-family: var(--text-font);
+  font-size: 20px;
+  text-align: center;
+  margin: 10px auto;
+  display: block;
 }
 
 section a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }

@@ -11,7 +11,7 @@
     <meta property="og:title" content="Share Hike Home">
     <meta property="og:description"
         content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://helaman-y-b.github.io/wdd231/shareHike/images/hero-1000.webp">
     <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/shareHike/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +60,7 @@
             </fieldset>
             <fieldset>
                 <legend>Desired membership</legend>
-                <div>
+                <div class="membership">
                     <label for="free">Free</label>
                     <input type="radio" value="Free" name="membership" id="free">
                 </div>
@@ -75,7 +75,7 @@
                         <li>Community forum access</li>
                     </ul>
                 </dialog>
-                <div>
+                <div class="membership">
                     <label for="bronze">Bronze</label>
                     <input type="radio" value="Bronze" name="membership" id="bronze">
                 </div>
@@ -91,7 +91,7 @@
                     </ul>
                 </dialog>
 
-                <div>
+                <div class="membership">
                     <label for="silver">Silver</label>
                     <input type="radio" value="Silver" name="membership" id="silver">
                 </div>
@@ -110,7 +110,7 @@
                     </ul>
                 </dialog>
 
-                <div>
+                <div class="membership">
                     <label for="gold">Gold</label>
                     <input type="radio" value="Gold" name="membership" id="gold">
                 </div>
@@ -134,11 +134,18 @@
     <footer>
         <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
         <div id="media">
-            <img src="images/facebook-f-brands-solid-full-small.webp" alt="Facebook icon">
-            <img src="images/x-twitter-brands-solid-full-small.webp" alt="X icon">
-            <img src="images/instagram-brands-solid-full-small.webp" alt="Instagram icon">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook-f-brands.webp" alt="Facebook icon">
+            </a>
+            <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer">
+                <img src="images/x-twitter-brands.webp" alt="X icon">
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-brands.webp" alt="Instagram icon">
+            </a>
         </div>
         <p id="lastModified"></p>
+        <a href="https://youtu.be/-clFVvWmlLs">API video demonstration</a>
     </footer>
 
 </body>

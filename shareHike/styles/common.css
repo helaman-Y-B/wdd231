@@ -8,6 +8,18 @@
   --text-font: "inter", Georgia, Times, serif;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
 h1,
 h2,
 h3 {
@@ -16,10 +28,6 @@ h3 {
 
 p {
   font-family: var(--text-font);
-}
-
-body {
-  background-color: var(--background-color);
 }
 
 header {
@@ -55,7 +63,7 @@ header p {
   padding: 25px;
   margin: 0px;
   transform: rotate(-90deg);
-  transition: transform 0.3s ease-in-out 0.5s;
+  transition: transform 0.3s ease-in-out;
 }
 
 header p.open-btn {
@@ -64,8 +72,6 @@ header p.open-btn {
 
 nav.open {
   transform: translateX(0);
-  /* Return to original position */
-  opacity: 1;
   pointer-events: auto;
 }
 
@@ -81,12 +87,8 @@ nav {
   width: 100%;
   height: min-content;
   transform: translateX(100%);
-  opacity: 0;
+  transition: transform 0.3s ease-in-out;
   pointer-events: none;
-  /* Looks like this prevents users from clicking links while they are hidden */
-  transition:
-    opacity 0.5s ease-in-out 0.3s,
-    transform 0.3s ease-in-out 0.5s;
 }
 
 header nav ul {
@@ -122,6 +124,7 @@ ul li a:link {
 
 main {
   padding-top: 100px;
+  flex: 1;
 }
 
 main h1 {
@@ -149,11 +152,64 @@ section p {
   background-color: var(--secondary-color);
 }
 
+.hike {
+  text-align: center;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  border: 5px inset var(--quaternary-color);
+  border-radius: 10px;
+}
+
+.hike h3 {
+  background-color: var(--tertiary-color);
+  margin: 0px;
+  padding: 1.17em;
+}
+
+#rating {
+  background-color: var(--quaternary-color);
+}
+
+.category {
+  display: block;
+  background-color: var(--background-color);
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid var(--quaternary-color);
+  border-radius: 10px;
+}
+
+.category h4 {
+  margin: 0px;
+  padding: 1em 0px;
+  font-size: 20px;
+  font-family: var(--header-font);
+}
+
+.category ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-family: var(--text-font);
+}
+
+.category ul li {
+  list-style: none;
+  padding: 10px;
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: auto;
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--background-color);
   padding: 25px;
   text-align: center;
+  margin-top: auto;
 }
 
 footer img {
@@ -166,4 +222,10 @@ footer img {
   gap: 15px;
   align-items: center;
   justify-content: center;
+}
+
+footer a {
+  color: var(--background-color);
+  font-family: var(--text-font);
+  font-size: 20px;
 }

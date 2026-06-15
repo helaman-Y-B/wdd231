@@ -11,7 +11,7 @@
     <meta property="og:title" content="Share Hike Home">
     <meta property="og:description"
         content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://helaman-y-b.github.io/wdd231/shareHike/images/hero-1000.webp">
     <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/shareHike/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
     <script src="scripts/common-scripts.js" defer></script>
+    <script type="module" src="scripts/controller-index.mjs"></script>
 </head>
 
 <body>
@@ -43,7 +45,7 @@
         <picture>
             <source media="(min-width: 700px)" srcset="images/hero-1000.webp">
             <source media="(min-width: 600px)" srcset="images/hero-700.webp">
-            <source media="(min-width: 400px)" srcset="images/mautain-hike500.webp">
+            <source media="(min-width: 500px)" srcset="images/mautain-hike500.webp">
             <source media="(min-width: 300px)" srcset="images/mautain-hike400.webp">
 
             <img src="images/hero-1000.webp" alt="Picture of a lake with a waterfall.">
@@ -61,27 +63,23 @@
                 financially.
             </p>
         </section>
-        <h1>The Highlights!</h1>
-        <section id="highlights">
-            <h2>Daniela</h2>
-            <picture>
-                <img src="images/"
-                    alt="A picture of a hike that a member called Daniela took in Londrina. Paraná, Brazil">
-            </picture>
-            <p>Something Something Something Something Something Something Something Something Something Something
-                Something Something Something Something Something Something Something Something Something Something
-                Something Something Something Something Something Something Something </p>
-            <p id="rating">⭐⭐⭐⭐⭐</p>
-        </section>
+        <section id="highlights"></section>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
         <div id="media">
-            <img src="images/facebook-f-brands-solid-full-small.webp" alt="Facebook icon">
-            <img src="images/x-twitter-brands-solid-full-small.webp" alt="X icon">
-            <img src="images/instagram-brands-solid-full-small.webp" alt="Instagram icon">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook-f-brands.webp" alt="Facebook icon">
+            </a>
+            <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer">
+                <img src="images/x-twitter-brands.webp" alt="X icon">
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-brands.webp" alt="Instagram icon">
+            </a>
         </div>
         <p id="lastModified"></p>
+        <a href="https://youtu.be/-clFVvWmlLs">API video demonstration</a>
     </footer>
 
 </body>

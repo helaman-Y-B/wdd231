@@ -11,7 +11,7 @@
     <meta property="og:title" content="Share Hike Home">
     <meta property="og:description"
         content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://helaman-y-b.github.io/wdd231/shareHike/images/hero-1000.webp">
     <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/shareHike/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/hikes.css">
+    <link rel="stylesheet" href="styles/hike-large.css">
     <script src="scripts/common-scripts.js" defer></script>
+    <script type="module" src="scripts/controller-hikes.mjs"></script>
 </head>
 
 <body>
@@ -41,33 +43,53 @@
     <main>
         <h1>Which hike has your image?</h1>
         <section>
-            <h2>Choosing the perfect hike is not easy...</h2>
+            <h2>Choosing the perfect hike <br> is not easy...</h2>
             <p>But here, you will be able to find one that screams your name. <br><br>
                 Here is a list of hikes that people shared close to your location and shared their experiences
                 visiting them. With this list it's imposible to not find the perfect hike for you!</p>
         </section>
-        <div id="hikes">
-            <h2>Check out the Hikes!</h2>
-            <div class="hike">
-                <h3 class="hike-name">Hike name</h3>
-                <img src="images/mautain-hike400.webp" alt="The hike img">
-                <ul class="info">
-                    <li>Rating:</li>
-                    <li>Location:</li>
-                    <li>Contact:</li>
-                </ul>
-                <button>Learn More!</button>
+        <h2>Find your next Hike!</h2>
+        <section id="filters">
+            <h3>Filters</h3>
+            <button id="highToLow">High to Low</button>
+            <button id="lowToHigh">Low to High</button>
+            <div id="filterCategory">
+                <label>
+                    <input type="radio" name="categoryFilter" value="All" checked>
+                    All Hikes
+                </label>
+                <label>
+                    <input type="radio" name="categoryFilter" value="Mountain">
+                    Mountain
+                </label>
+                <label>
+                    <input type="radio" name="categoryFilter" value="Waterfall">
+                    Waterfall
+                </label>
+                <label>
+                    <input type="radio" name="categoryFilter" value="Forest">
+                    Forest
+                </label>
             </div>
-        </div>
+        </section>
+        <div id="hikes"></div>
+
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
         <div id="media">
-            <img src="images/facebook-f-brands-solid-full-small.webp" alt="Facebook icon">
-            <img src="images/x-twitter-brands-solid-full-small.webp" alt="X icon">
-            <img src="images/instagram-brands-solid-full-small.webp" alt="Instagram icon">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook-f-brands.webp" alt="Facebook icon">
+            </a>
+            <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer">
+                <img src="images/x-twitter-brands.webp" alt="X icon">
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-brands.webp" alt="Instagram icon">
+            </a>
         </div>
         <p id="lastModified"></p>
+        <a href="https://youtu.be/-clFVvWmlLs">API video demonstration</a>
     </footer>
 
 </body>

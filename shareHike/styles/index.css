@@ -1,13 +1,3 @@
-:root {
-  --background-color: #f1f7ee;
-  --primary-color: #3a503b;
-  --secondary-color: #b0bea9;
-  --tertiary-color: #97b485;
-  --quaternary-color: #2c6d83;
-  --header-font: "rubik", Arial, Helvetica, sans-serif;
-  --text-font: "inter", Georgia, Times, serif;
-}
-
 main picture {
   font-family: var(--text-font);
   width: 100%;
@@ -16,4 +6,53 @@ main picture {
 
 main picture img {
   width: 100%;
+}
+
+/*All images should be 400px wide*/
+
+#highlights {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#highlights > h2:first-child {
+  background-color: var(--background-color);
+}
+
+#highlights img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  height: 90%;
+}
+
+.hike h2 {
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+}
+
+.hike {
+  margin: auto;
+  max-width: 350px;
+  height: 100%;
+}
+
+@media screen and (min-width: 526px) {
+  #highlights {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: auto;
+  }
+
+  #highlights > h2:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .hike {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

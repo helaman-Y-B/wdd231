@@ -1,13 +1,3 @@
-:root {
-  --background-color: #f1f7ee;
-  --primary-color: #3a503b;
-  --secondary-color: #b0bea9;
-  --tertiary-color: #97b485;
-  --quaternary-color: #2c6d83;
-  --header-font: "rubik", Arial, Helvetica, sans-serif;
-  --text-font: "inter", Georgia, Times, serif;
-}
-
 h2,
 h3 {
   margin: 0px;
@@ -16,21 +6,75 @@ h3 {
   text-align: center;
 }
 
-#hikes {
-  background-color: var(--secondary-color);
-  max-width: 90%;
-  border: 5px inset var(--quaternary-color);
-  border-radius: 5px;
-  margin: auto;
-  margin-bottom: 15px;
+main h2 {
+  background-color: var(--background-color);
 }
 
-.hike h2 {
+main section h2 {
+  background-color: var(--tertiary-color);
+}
+
+#filters {
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 15px;
+}
+
+#filters h3 {
+  grid-column: 1 / span 2;
+}
+
+#filters button {
+  grid-row: 2;
+  font-family: var(--header-font);
+  padding: 10px;
+}
+
+#filterCategory {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--text-font);
+  justify-items: center;
+}
+
+#filterCategory label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+#filterCategory input {
+  width: 20px;
+  height: 20px;
   margin: 0px;
-  margin-bottom: 20px;
+}
+
+#hikes {
+  border: none;
+  margin: auto;
+  border-radius: 5px;
+  width: 95%;
+}
+
+#hikes h2 {
+  margin: 0px;
   padding: 0.83em 0px;
   background-color: var(--tertiary-color);
   text-align: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#hikes p {
+  padding: 0.83em 0.83em;
+  margin: 0px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .hike img {
@@ -41,15 +85,13 @@ h3 {
   margin: 15px auto;
 }
 
-.hike ul {
-  font-family: var(--text-font);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.hike {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.hike ul li {
-  list-style: none;
+.hike h3 {
+  border-radius: 5px;
 }
 
 .hike button {
@@ -61,8 +103,4 @@ h3 {
   border-color: var(--primary-color);
   border-radius: 10px;
   border-style: outset;
-}
-
-.hike button:target-current {
-  background-color: var(--primary-color);
 }
