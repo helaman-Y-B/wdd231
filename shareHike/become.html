@@ -4,32 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Share Hike Home</title>
+    <title>Share Hike - Become a Member</title>
     <meta name="author" content="Helamã Y. Barbour">
     <meta name="description"
-        content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
-    <meta property="og:title" content="Share Hike Home">
+        content="Become a member of the Share Hike group and choose the membership level that fits your hiking goals.">
+    <meta property="og:title" content="Become a Member | Share Hike">
     <meta property="og:description"
-        content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
+        content="Join the Share Hike group to access exclusive member content, hiking resources, and community benefits.">
     <meta property="og:image" content="https://helaman-y-b.github.io/wdd231/shareHike/images/hero-1000.webp">
-    <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/shareHike/index.html">
+    <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/shareHike/become.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:wght@800&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Rubik:wght@800&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Rubik:wght@800&display=swap">
+    </noscript>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/become.css">
-    <link rel="stylesheet" href="styles/hikes.css">
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="styles/common.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/common.css">
+    </noscript>
+    <link rel="stylesheet" href="styles/index.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/index-larger.css" media="print" onload="this.media='all'">
     <script src="scripts/common-scripts.js" defer></script>
-    <script type="module" src="scripts/controller-become.mjs"></script>
+    <script type="module" src="scripts/controller-index.mjs"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/favicon.ico" alt="Share Hike Icon image">
+        <img src="images/favicon.ico" alt="Share Hike icon">
         <span>Share Hike</span>
         <p id="open-nav-btn" class="close-btn">🢁</p>
         <nav class="close">
@@ -41,10 +48,10 @@
         </nav>
     </header>
     <main>
-        <h1>Become one of us!</h1>
+        <h1>Become a member of Share Hike!</h1>
         <form action="thankyou.html" method="get">
             <fieldset>
-                <legend>Your infomration</legend>
+                <legend>Your information</legend>
 
                 <label for="fname">First Name:</label>
                 <input type="text" name="fname" id="fname">
@@ -135,13 +142,13 @@
         <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
         <div id="media">
             <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook-f-brands.webp" alt="Facebook icon">
+                <img src="images/facebook-f-brands.webp" alt="Facebook icon" width="44" height="44">
             </a>
             <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer">
-                <img src="images/x-twitter-brands.webp" alt="X icon">
+                <img src="images/x-twitter-brands.webp" alt="X icon" width="44" height="44">
             </a>
             <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram-brands.webp" alt="Instagram icon">
+                <img src="images/instagram-brands.webp" alt="Instagram icon" width="44" height="44">
             </a>
         </div>
         <p id="lastModified"></p>

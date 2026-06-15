@@ -7,29 +7,36 @@
     <title>Share Hike Home</title>
     <meta name="author" content="Helamã Y. Barbour">
     <meta name="description"
-        content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
+        content="Share Hike connects outdoor lovers with community-shared hikes, trail highlights, and local nature experiences.">
     <meta property="og:title" content="Share Hike Home">
     <meta property="og:description"
-        content="The home page of the Share Hike, where users can learn about Share Hike and see highlights of other peoples hikes.">
+        content="Discover Share Hike, view community-shared hikes, and explore the best outdoor experiences recommended by members.">
     <meta property="og:image" content="https://helaman-y-b.github.io/wdd231/shareHike/images/hero-1000.webp">
     <meta property="og:url" content="https://helaman-y-b.github.io/wdd231/shareHike/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:wght@800&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Rubik:wght@800&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Rubik:wght@800&display=swap">
+    </noscript>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/index-larger.css">
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="styles/common.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/common.css">
+    </noscript>
+    <link rel="stylesheet" href="styles/index.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/index-larger.css" media="print" onload="this.media='all'">
     <script src="scripts/common-scripts.js" defer></script>
     <script type="module" src="scripts/controller-index.mjs"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/favicon.ico" alt="Share Hike Icon image">
+        <img src="images/favicon.ico" alt="Share Hike icon" width="100" height="100">
         <span>Share Hike</span>
         <p id="open-nav-btn" class="close-btn">🢁</p>
         <nav class="close">
@@ -48,19 +55,19 @@
             <source media="(min-width: 500px)" srcset="images/mautain-hike500.webp">
             <source media="(min-width: 300px)" srcset="images/mautain-hike400.webp">
 
-            <img src="images/hero-1000.webp" alt="Picture of a lake with a waterfall.">
+            <img src="images/hero-1000.webp" alt="Picture of a lake with a waterfall." fetchpriority="high" width="350"
+                height="450">
         </picture>
-        <section id="purpouse">
+        <section id="purpose">
             <h2>Our purpose</h2>
-            <p>The purpose of the ShareHike project is to help people find parks, mountains and hikes that they can
-                take
-                and appreciate the nature around them. Sometimes it can be hard to find a new place to explore through
-                google maps and social media, but shareHike is here to solve this problem.
+            <p>The purpose of the Share Hike project is to help people find parks, mountains, and hikes that they can
+                explore and enjoy while appreciating the nature around them. Sometimes it can be hard to find a new
+                place
+                to explore through Google Maps and social media, but Share Hike is here to solve this problem.
                 <br><br>
-                In ShareHike people share their experiences about a specific place that they visited so that others may
-                know it and also enjoy that same place.
-                This will also help those that own these places and want more visitors to help maintain the place,
-                financially.
+                In Share Hike, people share their experiences about places they visited so others can discover and
+                enjoy them too. This also helps the sites and destinations gain more visitors and support their
+                preservation.
             </p>
         </section>
         <section id="highlights"></section>
@@ -69,13 +76,13 @@
         <p>&copy; <span id="currentYear"></span> - Helamã Y. Barbour - PR/BR</p>
         <div id="media">
             <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook-f-brands.webp" alt="Facebook icon">
+                <img src="images/facebook-f-brands.webp" alt="Facebook icon" width="44" height="44">
             </a>
             <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer">
-                <img src="images/x-twitter-brands.webp" alt="X icon">
+                <img src="images/x-twitter-brands.webp" alt="X icon" width="44" height="44">
             </a>
             <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram-brands.webp" alt="Instagram icon">
+                <img src="images/instagram-brands.webp" alt="Instagram icon" width="44" height="44">
             </a>
         </div>
         <p id="lastModified"></p>
