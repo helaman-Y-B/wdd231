@@ -21,6 +21,9 @@ main picture img {
 
 #highlights {
   border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #highlights > h2:first-child {
@@ -31,20 +34,24 @@ main picture img {
   width: 100%;
   margin: auto;
   display: block;
+  height: 90%;
 }
 
 .hike {
   text-align: center;
-  margin-bottom: 30px;
   background-color: var(--secondary-color);
+  margin: auto;
   display: flex;
   flex-direction: column;
   border: 5px inset var(--quaternary-color);
   border-radius: 10px;
+  max-width: 350px;
+  height: 100%;
 }
 
 .hike h2 {
   background-color: var(--tertiary-color);
+  border-radius: 5px;
 }
 
 .hike h3 {
@@ -88,15 +95,4 @@ main picture img {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   margin: auto;
-}
-
-.hike button {
-  font-family: var(--header-font);
-  background-color: var(--quaternary-color);
-  color: var(--background-color);
-  padding: 5px;
-  margin: 0.83em 0.83em;
-  border-color: var(--primary-color);
-  border-radius: 10px;
-  border-style: outset;
 }
