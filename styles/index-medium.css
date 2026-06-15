@@ -1,8 +1,8 @@
-@media screen and (min-width: 520px){
+@media screen and (min-width: 520px) {
     #courses ul {
         padding: 0px;
         list-style-type: none;
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
@@ -20,6 +20,15 @@
         border-color: var(--fourth-color);
         border-width: 5px;
         background-color: var(--main-color);
+        box-shadow: none;
+        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-style 0.3s ease;
+    }
+
+    #courses ul li:hover {
+        background-color: var(--fourth-color);
+        color: var(--second-color);
+        border-style: outset;
+        box-shadow: 0px 0px 10px 3px black;
     }
 
 }

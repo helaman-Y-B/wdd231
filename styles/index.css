@@ -150,10 +150,24 @@ section p {
 #courses span {
     text-align: center;
     padding: 5px;
+    font-size: 17px;
 }
 
 #courses ul {
+    font-size: 17px;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#courses ul li {
+    color: black;
+    transition: color 0.5s ease;
+}
+
+#courses ul li:hover {
+    color: #130025;
 }
 
 dialog {
@@ -172,11 +186,12 @@ dialog div {
 
 dialog div h2 {
     width: 100%;
+    margin-bottom: 0px;
 }
 
 dialog div button {
     width: 50px;
-    border-style: inset;
+    border-style: solid;
     border-color: var(--fourth-color);
     border-width: 2px;
     border-radius: 5px;

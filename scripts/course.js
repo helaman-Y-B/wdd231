@@ -113,10 +113,10 @@ function displayCourses() {
             <h2 class="course-name">${course.subject} ${course.number}</h2>
             <button class="close-modal">X</button>
         </div>
-        <p class="credits">${course.credits} credits</p>
-        <p class="certificate">${course.certificate} credits</p>
+        <p class="credits">Credits: ${course.credits} credits</p>
+        <p class="certificate">Certificate: ${course.certificate} credits</p>
         <p class="description">${course.description} credits</p>
-        <p class="technology">${course.technology}</p>
+        <p class="technology">Technologies Used: ${course.technology}</p>
         `;
 
         li.append(modal);
